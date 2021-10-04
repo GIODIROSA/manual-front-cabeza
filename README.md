@@ -24,7 +24,7 @@ ejemplo: etiquetas ** envolventes (wrap) ** otorgadas por Ripley para el reconoc
 
 _HEAD_
 
-"'
+```
 <mini-site-styles>
 
 <meta charset="UTF-8" />
@@ -33,10 +33,11 @@ _HEAD_
 
 <title>Landing Marketplace</title>
 </mini-site-styles>
-"'
+```
 
 _BODY_
-"'
+
+```
 <mini-site>
 
 <!-- div envolvente para lograr la especificidad de las etiquetas en style.css -->
@@ -47,11 +48,11 @@ _BODY_
 
 </div>
 </mini-site>
-"'
+```
 
 _SCRIPT_
 
-'''
+```
 <mini-site-scripts>
 
 <!-- enlace con carousel libreria min-->
@@ -59,4 +60,4 @@ _SCRIPT_
 <!-- enlace con JS -->
 <script src="./assets/js/main.js"></script>
 </mini-site-scripts>
-'''
+```
