@@ -12,7 +12,7 @@ Manual de uso que busca **_desarrollar normativas en apoyo a la toma de decision
 
 ### Desarrollo de Landing.
 
-"Las landing son estructuras visuales simples en su planteamiento" pero generan complejidades por las composiciones diversas e interacciones que se busca producto del tono de la marca y el cliente. Estableciendo así, verdaderas piezas gráficas interactivas con el usuario que implementan, la atracción perfecta para la conducta y el objetivo que se necesita.
+'''Las landing son estructuras visuales simples en su planteamiento''' pero generan complejidades por las composiciones diversas e interacciones que se busca producto del tono de la marca y el cliente. Estableciendo así, verdaderas piezas gráficas interactivas con el usuario que implementan, la atracción perfecta para la conducta y el objetivo que se necesita.
 
 Por ende, se requiere de la creación de un manual y documentación que establezca el patron a seguir dentro del esqueleto adaptativo y objetivo de la optimización y mantención del mismo.
 
@@ -24,7 +24,7 @@ ejemplo: etiquetas ** envolventes (wrap) ** otorgadas por Ripley para el reconoc
 
 _HEAD_
 
-"
+'''
 <mini-site-styles>
 
 <meta charset="UTF-8" />
@@ -33,10 +33,10 @@ _HEAD_
 
 <title>Landing Marketplace</title>
 </mini-site-styles>
-"
+'''
 
 _BODY_
-"
+'''
 <mini-site>
 
 <!-- div envolvente para lograr la especificidad de las etiquetas en style.css -->
@@ -47,11 +47,11 @@ _BODY_
 
 </div>
 </mini-site>
-"
+'''
 
 _SCRIPT_
 
-"
+'''
 <mini-site-scripts>
 
 <!-- enlace con carousel libreria min-->
@@ -59,5 +59,4 @@ _SCRIPT_
 <!-- enlace con JS -->
 <script src="./assets/js/main.js"></script>
 </mini-site-scripts>
-
-"
+'''
