@@ -18,7 +18,7 @@ Por ende, se requiere de la creación de un manual y documentación que establez
 
 #### Reglas:
 
-1. Etiquetas:
+1. Etiquetas **MADRES**:
 
 ejemplo: etiquetas ** envolventes (wrap) ** otorgadas por Ripley para el reconocimiento en la plataforma.
 
