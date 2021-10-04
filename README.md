@@ -30,8 +30,8 @@ _HEAD_
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 <title>Landing Marketplace</title>
+
 </mini-site-styles>
 ```
 
@@ -43,10 +43,11 @@ _BODY_
 <!-- div envolvente para lograr la especificidad de las etiquetas en style.css -->
 
 <div id="landing-example">
-
 <!-- CONTENIDO -->
-
 </div>
+
+<!-- final de div  -->
+
 </mini-site>
 ```
 
@@ -57,7 +58,68 @@ _SCRIPT_
 
 <!-- enlace con carousel libreria min-->
 <script src="./assets/js/splide.min.js"></script>
+
 <!-- enlace con JS -->
 <script src="./assets/js/main.js"></script>
+
 </mini-site-scripts>
+```
+
+---
+
+2. Convención de escritura ARCHIVOS/ID/CLASS/VARIABLES:
+
+A) **SNAKE CASE**
+
+```
+mi_archivo_javascript.js
+
+<!-- alternativa diversa a snake case para caso de archivos/carpetas -->
+
+03-soloxhoy
+10-octubre
+
+```
+
+B) **UPPER_CASE**
+
+```
+const UNA_CONSTANTE (caso de JSE6)
+id="LANDING-EXAMPLE"
+#LANDING-EXAMBLE (caso de style.css)
+
+```
+
+C) **UpperCamelCase**
+
+alternativa para nombrar `class`
+
+```
+class="WrapTextoMarketplace"
+
+```
+
+D) **lowerCamelCase**
+
+alternativa para nombrar `class`
+
+```
+class="wrapTextoMarketplace"
+
+```
+
+elementos primitivos.
+
+1.  let
+2.  const
+3.  boolean
+4.  numero
+
+function (funciones)
+
+```
+function exampleFunction (name){
+    return
+}
+
 ```
