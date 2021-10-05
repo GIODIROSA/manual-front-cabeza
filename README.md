@@ -67,14 +67,12 @@ _SCRIPT_
 
 ---
 
-2. Convención de escritura ARCHIVOS/ID/CLASS/VARIABLES:
+2. Normas de escritura ARCHIVOS/ID/CLASS/VARIABLES:
 
-A) **SNAKE CASE**
+A) **Nombrar archivos**
 
 ```
-mi_archivo_javascript.js
-
-<!-- alternativa diversa a snake case para caso de archivos/carpetas -->
+<!-- numero del día, seguido de un guión medio, nombre declarativo de la actividad -->
 
 03-soloxhoy
 10-octubre
@@ -92,18 +90,9 @@ id="LANDING-EXAMPLE"
 
 ```
 
-C) **UpperCamelCase**
+C) **lowerCamelCase**
 
-alternativa para nombrar `class`
-
-```
-class="WrapTextoMarketplace"
-
-```
-
-D) **lowerCamelCase**
-
-alternativa para nombrar `class`
+para nombrar clases: `class`
 
 ```
 class="wrapTextoMarketplace"
