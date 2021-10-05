@@ -236,7 +236,7 @@ instalación y linkeado de la librería.
 
 #### Estructura JS del carousel para la manipulación del carousel
 
-##### Se plantea con una instacia.
+##### Se plantea con una instancia.
 
 > En el html se establece el contenedor _DIV_ que va a contener el id para la activación del carousel
 
