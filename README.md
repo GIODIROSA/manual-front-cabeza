@@ -168,6 +168,98 @@ Se podrá usar una medida más pequeña particularmente sea el caso de uso que a
 
 ```
 
+### Etiquetas HTML excepcional
+
+###### uso de imagenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
+
+**ADVERTENCIA**: atributo importante
+
+```
+type="image/webp"
+
+```
+
+```
+
+ <picture>
+                <!-- DESKTP -->
+                <source
+                  media="(min-width: 700px)"
+                  type="image/webp"
+                  srcset=""
+                  alt=""
+                />
+                <!-- DESKTP -->
+                <source
+                  media="(min-width: 700px)"
+                  srcset="./assets/img/desk/box4.jpg"
+                />
+                <!-- DESKTP -->
+                <source type="image/webp" srcset="" alt="" />
+                <!-- MOBILE -->
+                <img src="./assets/img/mob/box4-mb.jpg" />
+              </picture>
+
+
+```
+
+### Uso de librería de native JS. carousel SPLITE
+
+revisar documentación de dicha librería
+
+<https://splidejs.com/>
+
+instalación y linkeado de la librería.
+
+> capturar los minificados de la librería.
+
+**HEAD** con el siguiente orden de carga.
+
+```
+<link rel="stylesheet" href="./assets/css/style.css" />
+      <link rel="stylesheet" href="./assets/css/splide.min.css" />
+
+```
+
+**BODY** ----> SCRIPT
+
+```
+
+  <!-- SPLIDE -->
+
+      <script src="./assets/js/splide.min.js"></script>
+      <!-- MAIN JS -->
+      <script src="./assets/js/main.js"></script>
+
+
+```
+
+#### Estructura JS del carousel para la manipulación del carousel
+
+##### Se plantea con una instacia.
+
+> En el html se establece el contenedor _DIV_ que va a contener el id para la activación del carousel
+
+```
+new Splide("#carouselMarcas", {
+perPage: 5,
+breakpoints: {
+768: {
+perPage: 2,
+},
+},
+
+rewind: true,
+type: "loop",
+autoplay: true,
+pagination: false,
+}).mount();
+
+```
+
+
+###### uso de imagenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
+
 ### Implementación de orden de código. (caso JS)
 
 1.  Importación de módulos
@@ -184,7 +276,8 @@ const: cuando sea una constante el valor y no va a cambiar. Let: si va ser un da
 
 1.  Las variable _Let_ por convención, se le establece el signo $ al principio de dicho nombre de variable, como norma para determinar que dicha variable guarda elementos del DOM, distinta de otras variable dentro de la aplicación:
 
-```
+````
+
 <!-- variable let que guarda un elemento del DOM -->
 
 let $btnVerMas= document.getElemenetById("VER-MAS");
@@ -198,6 +291,7 @@ let cantidad= 23;
 2. Usar _UPPER CASE_
 
 ```
+
 const VALOR-PI= 3,1416;
 
 ```
@@ -218,6 +312,7 @@ Los mailing, como lo descrito anteriormente, se construyen por medio de un JS ll
 > _ADVERTENCIA_: los link de objetos que no han sido señalados ni instruidos desde la tarea, siempre deben llevar al _home_, en dado caso, no dan una instrucción distinta. Por _default_ siempre al home.
 
 ```
+
 {
 photo: require("../img/images/03-blandosgenericos_01.jpg"),
 link: "https://simple.ripley.cl/",
@@ -233,6 +328,7 @@ Ejemplo de vigencia + legal que contiene una extensión super a la normal. Se es
 para enfatizar el orden visual y la separación entre parrafos.
 
 ```
+
 <td align="justify">
                                 <span style="text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#575757; margin:0; padding:0; font-weight:normal;">
                                   Precios disponibles en Ripley.com hasta el 06 de octubre de 2021 o hasta agotar stock. Precios Internet publicados incluyen descuento adicional. Productos sujetos a disponibilidad de stock al momento de la compra. No acumulable con otras promociones. Despacho de producto se realizará una vez confirmada la compra. *Dcto. ya aplicado a precio Internet | **Sólo productos seleccionados. <br><br>Contratación de Tarjeta de Crédito Ripley Mastercard sujeta a evaluación de antecedentes del cliente. Promoción válida para personas que contraten su Tarjeta de Crédito Ripley Mastercard entre el 27/09/2021 y 06/10/2021. Cupón de descuento de $20.000 será cargado al día hábil siguiente a la contratación en la app Banco Ripley, utilizable hasta el 31/11/2021 pagando con Tarjeta Ripley o Tarjeta Ripley Mastercard en compras sobre $40.000. Exclusivo para captaciones online. No es acumulable con otros cupones y no aplica en despacho ni compras en Mercado Ripley. Entrega de cupón, descuentos en Ripley son de responsabilidad de Comercial Eccsa S.A. Oportunidades exclusivas en tiendas Ripley y <a href="http://ripley.com/">ripley.com</a> y la administración del programa Ripley Puntos Go y la entrega de sus beneficios son de responsabilidad de Comercial Eccsa S.A. Términos y condiciones del programa Ripley Puntos Go en www.ripleypuntosgo.com. Restaurantes adheridos y condiciones del programa Restofans disponibles en pestaña “Beneficios / Restofans” de bancoripley.com. Tarjetas Ripley son emitidas por CAR S.A., sociedad de apoyo al giro y filial de Banco Ripley. Infórmese sobre la garantía estatal de los depósitos en su banco o en <a href="www.cmfchile.cl">www.cmfchile.cl</a>  <br><br>  Acumulan doble Ripley Puntos Go las compras en tiendas Ripley y Ripley.com realizadas con Tarjeta Ripley MasterCard y Debito Banco Ripley entre el 01/10/2021 y el 06/10/2021. Máximo 5.000 Ripley Puntos Go extra por cliente. Participan en la promoción sólo los clientes inscritos. Tope de 10.000 inscritos por campaña. Abono de Ripley Puntos Go promocionales se realizará durante el mes siguiente al pago. La administración del Programa Ripley Puntos Go y entrega de sus beneficios es de exclusiva responsabilidad de Comercial ECCSA S.A. Términos y condiciones del Programa en www.ripleypuntosgo.com. Tarjetas de Crédito Ripley son emitidas por CAR S.A., sociedad de apoyo al giro y filial de Banco Ripley. Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl.
@@ -278,4 +374,36 @@ Consiste en desarrollar e inyectar un campo variable para que se determine difer
 
 > ¡Una excepción!: se estipula la etiqueta style y su cierre en el head antes del body para afectar directamente al html, producto que dicho elemento ya paso por la traspilación y se encuentra en calidad de producción. Por ese aspecto y solo por ese motivo, se permite la flexibilidad de las buenas practicas en el uso de style dentro del archivo html.
 
+## IC DINÁMICA- CIRCULAR- TARJETA
 
+###### Estructuras diversas en su composición que van desde botoneras que conllevan a enrutamientos absolutos, como también, carousel circular y en forma de tarjetas.
+
+Normalmente, dichas piezas van en las cabeceras de las landing y de diferentes mundos del ecosistema de Ripley.com
+
+Existen varios elementos a considerar entre las IC dinámicas mas antiguas, se describe como una botonera flexible y adaptable a mobile y muchas veces lleva banner que dependiendo del boton van cambiando dicho elemento.
+
+Ejemplo:
+
+Descripción del array de objetos.
+
+1. category: nombre que se inyectará en el html al boton.
+2. url: url dada por el Product manager.
+3. banners: objeto que inyecta el banner para desktop y para mobile
+
+```
+const imageDesktop = "../images/1.jpg";
+const imageMobile = "../images/1-mb.jpg";
+
+const data = [
+  {
+    category: "vestuario deportivo",
+    url: "https://simple.ripley.cl/deporte/ropa-deportiva/ropa-deportiva",
+    banners: {
+      desktop: "../images/ic-dinamica-vestuario-deportivo-desk_.jpg",
+      mobile: "../images/ic-dinamica-vestuario-deportivo-mob.jpg",
+    },
+  },
+
+]
+```
+````
