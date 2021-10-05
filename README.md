@@ -286,6 +286,118 @@ Se determina que **no se usará un procesador** producto de los elementos de act
 2. Less
 3. Stylus
 
+# SEMÁTICA
+
+## La importancia en comentar el código.
+
+> La estructura y metodología del código, yace en la semántica utilizada y el orden jerárquico en la ejecución del mismo. Estableciendo en sí, la sincronía de la lectura y carga del mismo en el navegador.
+
+Por ende, es muy importante delimitar las fracciones y section, explicando de una manera corta y declarativa a que conlleva dicho bloque o que guarda dicho fragmento.
+La fragmentación de la estructura, es de vital importancia para la segmentación visual y el accionar de correcciones al momento de modificar o re construir section completas. Es decir, construir el layout por section como contenedores de padres supremos; dentro del mismo contenedores que fraccionan la section superior dentro de la jerarquia.
+
+ejemplo:
+
+```
+ <!-- CASO DE EXITO -->
+
+        <section id="wrapCasosExito">
+          <!-- TITULO HEADER -->
+          <div class="wrapTituloCasoExito">
+            <h1 id="prueba" class="tituloCasoExito">
+              conoce la experiencia de nuestros clientes
+            </h1>
+          </div>
+          <!-- SUPERIOR -->
+          <div class="wrapSuperior">
+            <div class="unoSuperior">
+              <picture>
+                <!-- DESKTP -->
+                <source
+                  media="(min-width: 700px)"
+                  type="image/webp"
+                  srcset=""
+                  alt=""
+                />
+                <!-- DESKTP -->
+                <source
+                  media="(min-width: 700px)"
+                  srcset="./assets/img/desk/box1.jpg"
+                />
+                <!-- DESKTP -->
+                <source type="image/webp" srcset="" alt="" />
+                <!-- MOBILE -->
+                <img src="./assets/img/mob/box1-mb.jpg" />
+              </picture>
+            </div>
+            <div class="dosSuperior">
+              <picture>
+                <!-- DESKTP -->
+                <source
+                  media="(min-width: 700px)"
+                  type="image/webp"
+                  srcset=""
+                  alt=""
+                />
+                <!-- DESKTP -->
+                <source
+                  media="(min-width: 700px)"
+                  srcset="./assets/img/desk/box2.jpg"
+                />
+                <!-- DESKTP -->
+                <source type="image/webp" srcset="" alt="" />
+                <!-- MOBILE -->
+                <img src="./assets/img/mob/box2-mb.jpg" />
+              </picture>
+            </div>
+          </div>
+          <!-- INFERIOR -->
+          <div class="wrapInferior">
+            <div class="unoInferior">
+              <picture>
+                <!-- DESKTP -->
+                <source
+                  media="(min-width: 700px)"
+                  type="image/webp"
+                  srcset=""
+                  alt=""
+                />
+                <!-- DESKTP -->
+                <source
+                  media="(min-width: 700px)"
+                  srcset="./assets/img/desk/box3.jpg"
+                />
+                <!-- DESKTP -->
+                <source type="image/webp" srcset="" alt="" />
+                <!-- MOBILE -->
+                <img src="./assets/img/mob/box3-mb.jpg" />
+              </picture>
+            </div>
+            <div class="dosInferior">
+              <picture>
+                <!-- DESKTP -->
+                <source
+                  media="(min-width: 700px)"
+                  type="image/webp"
+                  srcset=""
+                  alt=""
+                />
+                <!-- DESKTP -->
+                <source
+                  media="(min-width: 700px)"
+                  srcset="./assets/img/desk/box4.jpg"
+                />
+                <!-- DESKTP -->
+                <source type="image/webp" srcset="" alt="" />
+                <!-- MOBILE -->
+                <img src="./assets/img/mob/box4-mb.jpg" />
+              </picture>
+            </div>
+          </div>
+        </section>
+        <!--FINAL CASO DE EXITO -->
+
+```
+
 ###### uso de imagenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
 
 ### Implementación de orden de código. (caso JS)
