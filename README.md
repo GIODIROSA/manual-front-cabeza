@@ -257,6 +257,22 @@ pagination: false,
 
 ```
 
+##### Arrow de carousel, para su manipulación por medio de CSS.
+
+se determina la especificidad del mismo.
+
+```
+
+ #carouselMarcas .splide__arrow--prev {
+    left: -3rem;
+  }
+
+  #carouselMarcas .splide__arrow--next {
+    right: -2rem;
+  }
+
+
+```
 
 ###### uso de imagenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
 
