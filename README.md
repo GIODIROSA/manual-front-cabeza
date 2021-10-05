@@ -292,7 +292,7 @@ const: cuando sea una constante el valor y no va a cambiar. Let: si va ser un da
 
 1.  Las variable _Let_ por convención, se le establece el signo $ al principio de dicho nombre de variable, como norma para determinar que dicha variable guarda elementos del DOM, distinta de otras variable dentro de la aplicación:
 
-````
+```
 
 <!-- variable let que guarda un elemento del DOM -->
 
