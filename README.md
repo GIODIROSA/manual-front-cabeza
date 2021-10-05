@@ -274,6 +274,18 @@ se determina la especificidad del mismo.
 
 ```
 
+## No permitido
+
+##### Uso de procesador.
+
+> El énfasis del desarrollo, se establece en el crecimiento como profesional en el dominio ontologico y purista de los elementos que contituyen el origen de cada tecnología. Producto de las diferentes adversidades de la estructura de cliente. Conlleva, a reformarnos y volver a las raices ontologicas del desarrollo. Manejar la triada nos establece la comunión entre los desarrolladores y la unificación del producto a entregar. Ayudando con rapidez y eficacia la especificidad de los elementos al momento del montaje en el marco del cliente y su plataforma.
+
+Se determina que **no se usará un procesador** producto de los elementos de actualización del mismo y de la mantención del código en el tiempo. Establenciendo así, los elementos del lenguaje conocidos como la triada nativa: html/ css/ js. El planteamiento yace, para la unificación de estructura de codificación y establecer los similes entre los programadores para que sea entendible por cada miembro y reducir los tiempos de lectura y comprensión del código.
+
+1. Sass
+2. Less
+3. Stylus
+
 ###### uso de imagenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
 
 ### Implementación de orden de código. (caso JS)
@@ -422,4 +434,7 @@ const data = [
 
 ]
 ```
-````
+
+```
+
+```
