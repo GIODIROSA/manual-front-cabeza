@@ -126,18 +126,39 @@ function exampleFunction (name){
 
 ---
 
-### Implementación de media queries. 
+### Implementación de media queries.
+
 principio filosofico para conllevar a la praxis. Mobile first
 
->¿Qué hacer si el diseño de desktop se encuentra entregado en la tarea y no se ha desarrollado el mobile?
+> ¿Qué hacer si el diseño de desktop se encuentra entregado en la tarea y no se ha desarrollado el mobile?
 
-Para efectos de rapidez y productividad, se establece el desarrollo de desktop dentro de la 
-sentencia de media queries. Reservando su espacio y bajo la tonica de cascada de CSS. se encuentre en las primeras lineas de código el mobile y encapsulado en su media querie el desktop. 
+Para efectos de rapidez y productividad, se establece el desarrollo de desktop dentro de la
+sentencia de media queries. Reservando su espacio y bajo la tonica de cascada de CSS. Se encuentre en las primeras lineas de código el mobile y encapsulado en su media querie, el desktop.
 
->¿Qué medida de breackpoint se usa para el cambio de adaptabilidad de pantalla de mobile a desktop?
+> ¿Qué medida de breackpoint se usa para el cambio de adaptabilidad de pantalla de mobile a desktop?
 
-Dentro de los manuales de webmaster del cliente se ha establecido 768px > hacia adelante se plantea el layout de desktop < a esa medida se concentra mobile.
+Dentro de los manuales de webmaster del cliente, se ha establecido 768px > hacia adelante se plantea el layout de desktop < a esa medida se concentra mobile.
 
+## Syntax de media queries
+
+Usar bajo todo sentido dicha sentencia para todo elemento a desarrollo de layout.
+Se podrá usar una medida más pequeña particularmente sea el caso de uso que amerite el layout
+
+```
+<!-- ejemplo de encapsulamiento de de sentencia de media querie -->
+
+@media (min-width: 768px) {
+  #landing-marketplace #wrapCarouselMarcas {
+    display: block;
+  }
+
+  #landing-marketplace #wrapCarouselMarcasMobile {
+    display: none;
+  }
+
+}
+
+```
 
 ## MAILING
 
