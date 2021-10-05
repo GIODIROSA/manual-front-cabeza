@@ -211,7 +211,7 @@ const VALOR-PI= 3,1416;
 Los mailing son estructuras desarrolladas en bases de plantillas traspiladas en webpack para tener una estructura mas rápida. Estableciendo así, un objeto JS que inyecta imagen y url absolutas al html. Enviando a producción y proyectandose el armado secuencial del mailing.
 Aspecto a resaltar **_debe ser enviado a testeo como elemento fundamental de entrega al proveedor_**
 
-> _¡Aspectos a considerar!_ PRIMERA PARTE
+> PRIMERA PARTE
 
 Los mailing, como lo descrito anteriormente, se construyen por medio de un JS llamado items, que por medio de un array de objeto, inyecta la imagen previamente cortada y una URl.
 
@@ -225,7 +225,7 @@ link: "https://simple.ripley.cl/",
 
 ```
 
-> _¡Aspectos a considerar!_ SEGUNDA PARTE
+> SEGUNDA PARTE
 
 Si los elementos legales son muy extensos al final del mailing, se debe justificar sino centralizar. Se plantea o modifica directo al HTML que es traspilado en la carpeta _dist_ una vez que se mande a producción.
 
@@ -240,9 +240,42 @@ para enfatizar el orden visual y la separación entre parrafos.
                               </td>
 ```
 
-> _¡Aspectos a considerar!_ TERCERA PARTE
+> TERCERA PARTE
+> Mailing informativos.
 
-Si los elementos legales son muy extensos al final del mailing, se debe justificar sino centralizar. Se plantea o modifica directo al HTML que es traspilado en la carpeta _dist_ una vez que se mande a producción.
+Son elementos informativos de rápida construcción, donde se establece, un mensaje directo y preciso. Para efectos de armado, se debe establecer su estructura y corte adecuado al diseño, se manda a producción y directamente en el html final, se plantea el comentar las fracciones que no se deben proyectar, tal es el caso:
 
-Ejemplo de vigencia + legal que contiene una extensión super a la normal. Se establece tambien la doble etiqueta _<br>_
-para enfatizar el orden visual y la separación entre parrafos.
+Aspectos a considerar:
+
+1. title: se mantiene.
+2. marker: se mantiene.
+3. legal: se comenta.
+4. barilliance: false.
+5. puntos: false.
+
+Ejemplo:
+
+```
+var general = {
+  title: "Blandos Genérico", // aplica en todo momento (nombre de la tarea)
+  marker: "mail_r_blando1_cyber_s40_20211005_rc", (marcaje importante)
+  source: "email", // no modificar
+  medium: "mailing_rc", // no modificar
+  legal:
+    "Precios disponibles ...", // se comenta la vigencia y el legal
+  barilliance: true, // se coloca en false
+  puntos: true, // se coloca en false
+};
+module.exports = general;
+
+```
+
+## MAILING CON CAMPO VARIABLE
+
+###### Estructuras variante y dependiendo de la instrucción del Product Manager.
+
+Consiste en desarrollar e inyectar un campo variable para que se determine diferentes aspectos dinámicos al layout en la visual del usuario. Dicho elemento, se arma con imagenes cortadas dadas por el diseñador e implementadas por el front, contemplando y tomando en cuenta la salvedad, desde el html, se arma la fracción que conllevará el campo variable.
+
+> ¡Una excepción!: se estipula la etiqueta style y su cierre en el head antes del body para afectar directamente al html, producto que dicho elemento ya paso por la traspilación y se encuentra en calidad de producción. Por ese aspecto y solo por ese motivo, se permite la flexibilidad de las buenas practicas en el uso de style dentro del archivo html.
+
+
