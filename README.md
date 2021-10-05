@@ -6,13 +6,13 @@
 
 ## Prologo
 
-Manual de uso que busca **_desarrollar normativas en apoyo a la toma de decisiones_** para la creación de infractura de software. Normando y estableciendo, metodologías entre sus miembros para la mantención y creación de la misma; en plenitud, el entendimiento de patrones para la integración de cada desarrollador en el equipo. Canalizando, una manera de desarrollo sostenible y documentada.
+Manual de uso que busca **_desarrollar normativas en apoyo a la toma de decisiones_** para la creación de infraestructura de software. Normando y estableciendo, metodologías entre sus miembros para la mantención y creación de la misma; en plenitud, el entendimiento de patrones para la integración de cada desarrollador en el equipo. Canalizando, una manera de desarrollo sostenible y documentada.
 
 ---
 
 ### Desarrollo de Landing.
 
-'''Las landing son estructuras visuales simples en su planteamiento''' pero generan complejidades por las composiciones diversas e interacciones que se busca producto del tono de la marca y el cliente. Estableciendo así, verdaderas piezas gráficas interactivas con el usuario que implementan, la atracción perfecta para la conducta y el objetivo que se necesita.
+`Las landing son estructuras visuales simples en su planteamiento` pero generan complejidades por las composiciones diversas e interacciones que se busca producto del tono de la marca y el cliente. Estableciendo así, verdaderas piezas gráficas interactivas con el usuario que implementan, la atracción perfecta para la conducta y el objetivo que se necesita.
 
 Por ende, se requiere de la creación de un manual y documentación que establezca el patron a seguir dentro del esqueleto adaptativo y objetivo de la optimización y mantención del mismo.
 
@@ -153,6 +153,5 @@ Los mailing, como lo descrito anteriormente, se construyen por medio de un JS ll
 photo: require("../img/images/03-blandosgenericos_01.jpg"),
 link: "https://simple.ripley.cl/",
 },
-
 
 ```
