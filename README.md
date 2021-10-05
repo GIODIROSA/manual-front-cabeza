@@ -85,7 +85,9 @@ B) **UPPER_CASE**
 
 ```
 const UNA_CONSTANTE (caso de JSE6)
+
 id="LANDING-EXAMPLE"
+
 #LANDING-EXAMBLE (caso de style.css)
 
 ```
@@ -121,5 +123,36 @@ function (funciones)
 function exampleFunction (name){
     return
 }
+
+```
+
+---
+
+### Implementación de orden de código. (caso JS)
+
+1.  Importación de módulos
+2.  Declaración de variables
+3.  Declaración de funciones
+4.  Ejecución de código
+
+---
+
+## MAILING
+
+###### desarrollo rutinario de la celula de ripley.com
+
+Los mailing son estructuras desarrolladas en bases de plantillas traspiladas en webpack para tener una estructura mas rápida. Estableciendo así, un objeto JS que inyecta imagen y url absolutas al html. Enviando a producción y proyectandose el armado secuencial del mailing.
+Aspecto a resaltar **_debe ser enviado a testeo como elemento fundamental de entrega al proveedor_**
+
+> _¡Aspectos a considerar!_
+
+Los mailing, como lo descrito anteriormente, se construyen por medio de un JS llamado items, que por medio de un array de objeto, inyecta la imagen previamente cortada y una URl.
+
+```
+{
+photo: require("../img/images/03-blandosgenericos_01.jpg"),
+link: "https://simple.ripley.cl/",
+},
+
 
 ```
