@@ -69,10 +69,10 @@ _HEAD_
 ```
 <mini-site-styles>
 
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Landing Marketplace</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Marketplace</title>
 
 </mini-site-styles>
 ```
@@ -84,9 +84,10 @@ _BODY_
 
 <!-- div envolvente para lograr la especificidad de las etiquetas en style.css -->
 
-<div id="landing-example">
-<!-- CONTENIDO -->
-</div>
+  <div id="landing-example">
+  <!-- CONTENIDO -->
+  ...
+  </div>
 
 <!-- final de div  -->
 
@@ -99,10 +100,10 @@ _SCRIPT_
 <mini-site-scripts>
 
 <!-- enlace con carousel libreria min-->
-<script src="./assets/js/splide.min.js"></script>
+    <script src="./assets/js/splide.min.js"></script>
 
 <!-- enlace con JS -->
-<script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 
 </mini-site-scripts>
 ```
@@ -226,33 +227,23 @@ ejemplo:
 
 ###### uso de imágenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
 
-**ADVERTENCIA**: atributo importante
+**ADVERTENCIA**: atributo importante `type="image/webp"`; además, la estructura ya esta reseteada para ser implementada. Tiene tres elemento desktop pero normalmente la etiqueta del medio es la usada.
 
 ```
-
 type="image/webp"
 
 ```
 
 ```
-
- <picture>
-                <!-- DESKTP -->
-                <source
-                  media="(min-width: 700px)"
-                  type="image/webp"
-                  srcset=""
-                  alt=""
-                />
-                <!-- DESKTP -->
-                <source
-                  media="(min-width: 700px)"
-                  srcset="./assets/img/desk/box4.jpg"
-                />
-                <!-- DESKTP -->
-                <source type="image/webp" srcset="" alt="" />
-                <!-- MOBILE -->
-                <img src="./assets/img/mob/box4-mb.jpg" />
+<picture>
+    <!-- DESKTP -->
+        <source media="(min-width: 700px)" type="image/webp" srcset="" alt=""/>
+    <!-- DESKTP -->
+        <source media="(min-width: 700px)" srcset="./assets/img/desk/box4.jpg"/>
+    <!-- DESKTP -->
+        <source type="image/webp" srcset="" alt="" />
+    <!-- MOBILE -->
+        <img src="./assets/img/mob/box4-mb.jpg" />
 </picture>
 
 ```
@@ -298,17 +289,17 @@ Instalación y linkeado de la librería.
 
 ```
 new Splide("#carouselMarcas", {
-perPage: 5,
-breakpoints: {
-    768: {
-    perPage: 2,
+  perPage: 5,
+  breakpoints: {
+      768: {
+      perPage: 2,
   },
 },
 
-rewind: true,
-type: "loop",
-autoplay: true,
-pagination: false,
+  rewind: true,
+  type: "loop",
+  autoplay: true,
+  pagination: false,
 
 }).mount();
 
@@ -355,17 +346,16 @@ La fragmentación de la estructura, es de vital importancia para la segmentació
 ejemplo:
 
 ```
-
- <!-- CASO DE EXITO -->
+<!-- CASO DE EXITO -->
 
 <section id="wrapCasosExito">
 <!-- TITULO HEADER -->
      <div class="wrapTituloCasoExito">
-            <h1 id="prueba" class="tituloCasoExito">
+          <h1 id="prueba" class="tituloCasoExito">
               conoce la experiencia de nuestros clientes
-            </h1>
+          </h1>
     </div>
- <!-- SUPERIOR -->
+<!-- SUPERIOR -->
     <div class="wrapSuperior">
         <div class="unoSuperior">
             <picture>
@@ -407,50 +397,7 @@ ejemplo:
                 <img src="./assets/img/mob/box2-mb.jpg" />
             </picture>
           </div>
-      </div>
-<!-- INFERIOR -->
-          <div class="wrapInferior">
-            <div class="unoInferior">
-              <picture>
-                <!-- DESKTP -->
-                <source
-                  media="(min-width: 700px)"
-                  type="image/webp"
-                  srcset=""
-                  alt=""
-                />
-                <!-- DESKTP -->
-                <source
-                  media="(min-width: 700px)"
-                  srcset="./assets/img/desk/box3.jpg"
-                />
-                <!-- DESKTP -->
-                <source type="image/webp" srcset="" alt="" />
-                <!-- MOBILE -->
-                <img src="./assets/img/mob/box3-mb.jpg" />
-              </picture>
-            </div>
-            <div class="dosInferior">
-              <picture>
-                <!-- DESKTP -->
-                <source
-                  media="(min-width: 700px)"
-                  type="image/webp"
-                  srcset=""
-                  alt=""
-                />
-                <!-- DESKTP -->
-                <source
-                  media="(min-width: 700px)"
-                  srcset="./assets/img/desk/box4.jpg"
-                />
-                <!-- DESKTP -->
-                <source type="image/webp" srcset="" alt="" />
-                <!-- MOBILE -->
-                <img src="./assets/img/mob/box4-mb.jpg" />
-              </picture>
-            </div>
-          </div>
+    </div>
 </section>
 <!--FINAL CASO DE EXITO -->
 
@@ -486,15 +433,17 @@ _ADVERTENCIA_: no usar variable de corte global como _var_ sino de alcance local
 
 <!-- variable let que guarda un elemento del DOM -->
 
-let $btnVerMas= document.getElemenetById("VER-MAS");
+  let $btnVerMas= document.getElemenetById("VER-MAS");
 
 <!-- variable let que NO guarda un elemento del DOM -->
 
-let cantidad= 23;
+  let cantidad= 23;
 
 ```
 
 2. Usar _UPPER_CASE_
+   uso de upper_case para nombrar variable constante como normativa.
+   ejemplo:
 
 ```
 
@@ -519,7 +468,7 @@ Los mailing, como lo descrito anteriormente, se construyen por medio de un archi
 
 > Existen dos elementos: un objeto y un array, sirven dependendiendo de la propuesta gráfica.
 
-#### Objecto Simple
+#### Objeto Simple
 
 Es usado cuando hay una sola section cortada en la maqueta y te conduce a una sola URL.
 Es decir, una imagen, una URL.
@@ -527,8 +476,8 @@ Es decir, una imagen, una URL.
 ```
 
 {
-photo: require("../img/images/03-blandosgenericos_01.jpg"),
-link: "https://simple.ripley.cl/",
+  photo: require("../img/images/03-blandosgenericos_01.jpg"),
+  link: "https://simple.ripley.cl/",
 },
 
 ```
@@ -538,21 +487,22 @@ link: "https://simple.ripley.cl/",
 Es usado cuando en una sola section existe dos imágenes antagónicas, cada una con una URL determinada.
 
 ```
-
 {
 block: [
-{
-photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
-link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
-},
-{
-photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
-link: "https://simple.ripley.cl/supermercado/despensa",
-},
-],
+    {
+      photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
+      link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
+    },
+    {
+      photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
+      link: "https://simple.ripley.cl/supermercado/despensa",
+    },
+  ],
 },
 
 ```
+
+Ejemplo visual de bloque duales. insertar imagen de apoyo.
 
 #### Array triple o bloque
 
@@ -564,23 +514,24 @@ _ADVERTENCIA_ solicitar al diseñador que esta section sea cortada de manera equ
 ```
 {
 block: [
-{
-photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
-link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
-},
-{
-photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
-link: "https://simple.ripley.cl/supermercado/despensa",
-},
-
-{
-photo: require("../img/images/04-ultimosdias2-vertical6_03.jpg"),
-link: "https://simple.ripley.cl/supermercado/despensa",
-},
-],
+    {
+      photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
+      link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
+    },
+    {
+      photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
+      link: "https://simple.ripley.cl/supermercado/despensa",
+    },
+    {
+      photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
+      link: "https://simple.ripley.cl/supermercado/despensa",
+    },
+  ],
 },
 
 ```
+
+Ejemplo visual de bloque triple. insertar imagen de apoyo.
 
 #### Banner promocional de banco ripley o evento temporal
 
@@ -589,8 +540,8 @@ Este banner, se localiza en el footer del mailing con una URL asociada. Tienen l
 ```
 
 {
-photo: require("../img/banners/cyber2.jpg"),
-link: "https://www.bancoripley.cl/solicitar-tarjeta-online?utm_source=ripley-com&utm_medium=mail_footer&utm_campaign=captacion_jun21",
+  photo: require("../img/banners/cyber2.jpg"),
+  link: "https://www.bancoripley.cl/solicitar-tarjeta-online?utm_source=ripley-com&utm_medium=mail_footer&utm_campaign=captacion_jun21",
 },
 
 ```
@@ -605,10 +556,10 @@ para enfatizar el orden visual y la separación entre parrafos.
 ```
 
 <td align="justify">
-                                <span style="text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#575757; margin:0; padding:0; font-weight:normal;">
-                                  Precios disponibles en Ripley.com hasta el 06 de octubre de 2021 o hasta agotar stock. Precios Internet publicados incluyen descuento adicional. Productos sujetos a disponibilidad de stock al momento de la compra. No acumulable con otras promociones. Despacho de producto se realizará una vez confirmada la compra. *Dcto. ya aplicado a precio Internet | **Sólo productos seleccionados. <br><br>Contratación de Tarjeta de Crédito Ripley Mastercard sujeta a evaluación de antecedentes del cliente. Promoción válida para personas que contraten su Tarjeta de Crédito Ripley Mastercard entre el 27/09/2021 y 06/10/2021. Cupón de descuento de $20.000 será cargado al día hábil siguiente a la contratación en la app Banco Ripley, utilizable hasta el 31/11/2021 pagando con Tarjeta Ripley o Tarjeta Ripley Mastercard en compras sobre $40.000. Exclusivo para captaciones online. No es acumulable con otros cupones y no aplica en despacho ni compras en Mercado Ripley. Entrega de cupón, descuentos en Ripley son de responsabilidad de Comercial Eccsa S.A. Oportunidades exclusivas en tiendas Ripley y <a href="http://ripley.com/">ripley.com</a> y la administración del programa Ripley Puntos Go y la entrega de sus beneficios son de responsabilidad de Comercial Eccsa S.A. Términos y condiciones del programa Ripley Puntos Go en www.ripleypuntosgo.com. Restaurantes adheridos y condiciones del programa Restofans disponibles en pestaña “Beneficios / Restofans” de bancoripley.com. Tarjetas Ripley son emitidas por CAR S.A., sociedad de apoyo al giro y filial de Banco Ripley. Infórmese sobre la garantía estatal de los depósitos en su banco o en <a href="www.cmfchile.cl">www.cmfchile.cl</a>  <br><br>  Acumulan doble Ripley Puntos Go las compras en tiendas Ripley y Ripley.com realizadas con Tarjeta Ripley MasterCard y Debito Banco Ripley entre el 01/10/2021 y el 06/10/2021. Máximo 5.000 Ripley Puntos Go extra por cliente. Participan en la promoción sólo los clientes inscritos. Tope de 10.000 inscritos por campaña. Abono de Ripley Puntos Go promocionales se realizará durante el mes siguiente al pago. La administración del Programa Ripley Puntos Go y entrega de sus beneficios es de exclusiva responsabilidad de Comercial ECCSA S.A. Términos y condiciones del Programa en www.ripleypuntosgo.com. Tarjetas de Crédito Ripley son emitidas por CAR S.A., sociedad de apoyo al giro y filial de Banco Ripley. Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl.
-                                </span>
-                              </td>
+    <span style="text-align:justify;font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#575757; margin:0; padding:0; font-weight:normal;">
+          Precios disponibles en Ripley.com hasta el 06 de octubre de 2021 o hasta agotar stock. Precios Internet publicados incluyen descuento adicional. Productos sujetos a disponibilidad de stock al momento de la compra. No acumulable con otras promociones. Despacho de producto se realizará una vez confirmada la compra. *Dcto. ya aplicado a precio Internet | **Sólo productos seleccionados. <br><br>Contratación de Tarjeta de Crédito Ripley Mastercard sujeta a evaluación de antecedentes del cliente. Promoción válida para personas que contraten su Tarjeta de Crédito Ripley Mastercard entre el 27/09/2021 y 06/10/2021. Cupón de descuento de $20.000 será cargado al día hábil siguiente a la contratación en la app Banco Ripley, utilizable hasta el 31/11/2021 pagando con Tarjeta Ripley o Tarjeta Ripley Mastercard en compras sobre $40.000. Exclusivo para captaciones online. No es acumulable con otros cupones y no aplica en despacho ni compras en Mercado Ripley. Entrega de cupón, descuentos en Ripley son de responsabilidad de Comercial Eccsa S.A. Oportunidades exclusivas en tiendas Ripley y <a href="http://ripley.com/">ripley.com</a> y la administración del programa Ripley Puntos Go y la entrega de sus beneficios son de responsabilidad de Comercial Eccsa S.A. Términos y condiciones del programa Ripley Puntos Go en www.ripleypuntosgo.com. Restaurantes adheridos y condiciones del programa Restofans disponibles en pestaña “Beneficios / Restofans” de bancoripley.com. Tarjetas Ripley son emitidas por CAR S.A., sociedad de apoyo al giro y filial de Banco Ripley. Infórmese sobre la garantía estatal de los depósitos en su banco o en <a href="www.cmfchile.cl">www.cmfchile.cl</a>  <br><br>  Acumulan doble Ripley Puntos Go las compras en tiendas Ripley y Ripley.com realizadas con Tarjeta Ripley MasterCard y Debito Banco Ripley entre el 01/10/2021 y el 06/10/2021. Máximo 5.000 Ripley Puntos Go extra por cliente. Participan en la promoción sólo los clientes inscritos. Tope de 10.000 inscritos por campaña. Abono de Ripley Puntos Go promocionales se realizará durante el mes siguiente al pago. La administración del Programa Ripley Puntos Go y entrega de sus beneficios es de exclusiva responsabilidad de Comercial ECCSA S.A. Términos y condiciones del Programa en www.ripleypuntosgo.com. Tarjetas de Crédito Ripley son emitidas por CAR S.A., sociedad de apoyo al giro y filial de Banco Ripley. Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl.
+    </span>
+</td>
 ```
 
 > TERCERA PARTE
@@ -628,14 +579,16 @@ Ejemplo:
 
 ```
 var general = {
+
   title: "Blandos Genérico", // aplica en todo momento (nombre de la tarea)
-  marker: "mail_r_blando1_cyber_s40_20211005_rc", (marcaje importante)
+  marker: "mail_r_blando1_cyber_s40_20211005_rc", // (marcaje importante)
   source: "email", // no modificar
   medium: "mailing_rc", // no modificar
   legal:
     "Precios disponibles ...", // se comenta la vigencia y el legal
   barilliance: true, // se coloca en false
   puntos: true, // se coloca en false
+
 };
 module.exports = general;
 
@@ -678,7 +631,6 @@ const data = [
       mobile: "../images/ic-dinamica-vestuario-deportivo-mob.jpg",
     },
   },
-
 ]
 ```
 
@@ -734,15 +686,16 @@ Esta estructura contiene un cintillo que será comentado o descomentado dependie
       <img src="assets/img/Cintillo-mob.jpg" alt="cintillo infantil" />
     </picture>
   </a>
-  <!--FIN -->
+<!--FIN -->
 
 ```
 
 #### Estructura en HTML de la IC circular.
 
-```
+estructura de código donde se carga los elementos a renderizarse en el navegador.
 
- <div id="ic-container">
+```
+<div id="ic-container">
     <div class="iccarousel-nueva owl-carousel owl-theme">
       <a
         href="https://simple.ripley.cl/deporte-y-aventura/camping-y-tiempo-libre/carpas-y-sacos?icd-camping-carpas-sacos"
@@ -822,6 +775,7 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 
 ```
 #ic-container {
+
   position: relative;
   width: 80%;
   display: flex;
@@ -831,6 +785,7 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
   margin: 0 auto;
   /*padding: 10px 0;*/
   margin-bottom: -30px;
+
 }
 
 ```
@@ -895,6 +850,7 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 
 ```
 #ic-container {
+
   position: relative;
   width: 100%;
   display: flex;
@@ -904,6 +860,7 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
   margin: 0 auto;
   /*padding: 10px 0;*/
   margin-bottom: -30px;
+
 }
 
 ```
