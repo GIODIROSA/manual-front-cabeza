@@ -536,7 +536,7 @@ Este banner, se localiza en el footer del mailing. Determinando unas URL adicion
 
 > SEGUNDA PARTE
 
-Si los elementos legales son muy extensos al final del mailing, se debe justificar sino centralizar. Se plantea o modifica directo al HTML que es traspilado en la carpeta _dist_ una vez que se mande a producción.
+Si los elementos legales, son muy extensos al final del mailing, se debe justificar sino centralizar. Se plantea o modifica directo al HTML que es traspilado en la carpeta _dist_ una vez que se mande a producción.
 
 Ejemplo de vigencia + legal que contiene una extensión super a la normal. Se establece tambien la doble etiqueta _<br>_
 para enfatizar el orden visual y la separación entre parrafos.
@@ -650,6 +650,12 @@ La implementación según Webmaster tiene una normativa en su configuración
 > _Alerta_: la estructura debe cambiar en la brevedad por ser desarrollada con un carousel de caracteristicas arcaicas y tiene un mantenimiento nulo.
 
 Esta estructura contiene un cintillo que será comentado o descomentado dependiendo del requerimiento establecido y la aprobación de boceto de diseño y PM.
+
+## ¡ADVERTENCIA!
+
+> Recordar que el primer elemento se debe especificar en su clase para la activación del css la clase **active**
+
+> Si en el caso contrario se quiere desactivar eventualidades de hover a un elemento o items particular. Se estipula en inline el atributo `pointer-events: none;` a la etiqueta señalada para que elimine el evento y quede desactivado.
 
 ### Considerar:
 
@@ -771,3 +777,74 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 ---
 
 ## IC DINÁMICA TARJETA
+
+> Se aplica la misma determinación de IC DINÁMICA CIRCULA. Solo cambia, el elemento visual de forma.
+
+## ¡ADVERTENCIA!
+
+Recordar que el primer elemento se debe especificar en su clase para la activación del css la clase **active**
+
+Si en el caso contrario se quiere desactivar eventualidades de hover a un elemento o items particular. Se estipula en inline (html) el atributo `pointer-events: none;` a la etiqueta señalada para que elimine el evento y quede desactivado.
+
+> Se presenta las mismas características semanticas de armado de la ic dinámica tarjeta.
+
+1. HTML
+
+```
+ <div class="iccarousel-nueva owl-carousel owl-theme">
+      <a
+        href="https://simple.ripley.cl/moda-y-accesorios/marcas-hombre/tennis"
+        class="item active"
+      >
+        <img src="assets/img/pantalonhombre1.jpg" alt="hombre" />
+        <h2>hombre</h2>
+      </a>
+
+```
+
+2. RUN JS
+
+```
+$("#ic-container .iccarousel-nueva").owlCarousel({
+  loop: false,
+  autoplay: true,
+  nav: true,
+  navText: [
+    "<div class='nav-btn prev-slide'></div>",
+    "<div class='nav-btn next-slide'></div>",
+  ],
+  items: 5,
+  responsive: {
+    0: {
+      items: 2,
+    },
+    500: {
+      items: 2,
+    },
+    750: {
+      items: 2,
+    },
+    1000: {
+      items: 4,
+    },
+  },
+});
+
+```
+
+3. CSS Contiene un 100% de with
+
+```
+#ic-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  /*padding: 10px 0;*/
+  margin-bottom: -30px;
+}
+
+```
