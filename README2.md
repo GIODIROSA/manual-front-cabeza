@@ -40,7 +40,7 @@ A) **Nomenclatura para nombrar archivos**
 
 ```
 
-B) **Norma UPPER_CASE para nombrar clases y id**
+B) **Norma UPPER_CASE para nombrar id y constante en varible JS**
 
 ```
 const UNA_CONSTANTE (caso de JSE6)
@@ -51,7 +51,7 @@ id="LANDING-EXAMPLE" (caso de html)
 
 ```
 
-C) **Norma lowerCamelCase para nombrar clases y id**
+C) **Norma lowerCamelCase para nombrar clases**
 
 para nombrar clases: `class`
 
