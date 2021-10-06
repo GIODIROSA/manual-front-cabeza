@@ -47,7 +47,7 @@ const UNA_CONSTANTE (caso de JSE6)
 
 id="LANDING-EXAMPLE" (caso de html)
 
-#LANDING-EXAMBLE (caso de style.css)
+#LANDING-EXAMPLE (caso de style.css)
 
 ```
 
@@ -222,7 +222,7 @@ Uso en style.css
         href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
         crossorigin="anonymous"
-      />
+  />
 
 ```
 
@@ -281,19 +281,19 @@ type="image/webp"
                 <source type="image/webp" srcset="" alt="" />
                 <!-- MOBILE -->
                 <img src="./assets/img/mob/box4-mb.jpg" />
-              </picture>
+</picture>
 
 ```
 
-> Nota: estipular el width: 100% de la imagen en el css, para el caso de desktop y mobile. Para el ajuste adecuado de la caja. Tener en cuenta que la etiqueta _picture_ estipula un padding-bottom de 6 pixeles. Dato a considerar a la hora de realización de grillas o flexibilizar un caja.
+> Nota: Establecer que la imagen tendrá un width: 100% en css tanto en desktop como en mobile, para lograr el ajuste adecuado de la caja. Tener en cuenta que la etiqueta _picture_ estipula un padding-bottom de 6 pixeles, dato a considerar a la hora de realizar grillas o flexibilizar un caja.
 
 ### Uso de librería de native JS. carousel SPLITE
 
-revisar documentación de dicha librería para el máximo aprovechamiento de las facultades del mismo.
+Revisar documentación de dicha librería para el máximo aprovechamiento de las facultades de la misma.
 
 <https://splidejs.com/>
 
-instalación y linkeado de la librería.
+Instalación y linkeado de la librería.
 
 > capturar los minificados de la librería.
 
@@ -318,7 +318,7 @@ instalación y linkeado de la librería.
 
 ```
 
-#### Estructura JS del carousel para la manipulación del carousel
+#### Estructura JS del carousel para su manipulación 
 
 ##### Se plantea con una instancia.
 
@@ -343,7 +343,7 @@ pagination: false,
 
 ##### Arrow de carousel, para su manipulación por medio de CSS.
 
-se determina la especificidad del mismo.
+Se determina la especificidad del mismo.
 
 ```
 
@@ -361,13 +361,13 @@ right: -2rem;
 
 ##### Uso de procesador.
 
-> El énfasis del desarrollo, se establece en el crecimiento como profesional en el dominio ontológico y purista de los elementos que constituyen, el origen de cada tecnología. Producto de las diferentes adversidades de la estructura del cliente. Se conlleva, a reformarnos y volver a las raíces iniciales del desarrollo. Manejar la triada, nos foratalece la comunión entre los desarrolladores y la unificación del producto a entregar. Ayudando con rapidez y eficacia; la especificidad de los elementos al momento del montaje en el marco del cliente y su plataforma.
+> El énfasis del desarrollo, se establece en el crecimiento como profesional en el dominio ontológico y purista de los elementos que constituyen el origen de cada tecnología. Producto de las diferentes adversidades de la estructura del cliente. Se conlleva, a reformarnos y volver a las raíces iniciales del desarrollo. Manejar la triada, nos foratalece la comunión entre los desarrolladores y la unificación del producto a entregar. Ayudando con rapidez y eficacia; la especificidad de los elementos al momento del montaje en el marco del cliente y su plataforma.
 
 Se determina que **no se usará un procesador** producto de los elementos de actualización del mismo y de la mantención del código en el tiempo. Establenciendo así, los elementos del lenguaje conocidos como la triada nativa: html/ css/ js. El planteamiento yace, para la unificación de estructura de codificación y establecer los similes entre los programadores para que sea entendible por cada miembro y reducir los tiempos de lectura y comprensión del código.
 
-1. Sass
-2. Less
-3. Stylus
+1. Stylus 
+2. Sass
+3. Less
    ... entre otros.
 
 # SEMÁNTICA
@@ -377,7 +377,7 @@ Se determina que **no se usará un procesador** producto de los elementos de act
 > La estructura y metodología del código, yace en la semántica utilizada y el orden jerárquico en la ejecución del mismo. Estableciendo en sí, la sincronía de la lectura y carga del mismo en el navegador.
 
 Por ende, es muy importante delimitar las fracciones y section, explicando de una manera corta y declarativa a que conlleva dicho bloque o que guarda dicho fragmento.
-La fragmentación de la estructura, es de vital importancia para la segmentación visual y el accionar de correcciones al momento de modificar o re construir section completas. Es decir, construir el layout por section como contenedores de padres supremos; dentro del mismo contenedores que fraccionan la section superior dentro de la jerarquia.
+La fragmentación de la estructura, es de vital importancia para la segmentación visual y el accionar de correcciones al momento de modificar o re construir section completas. Es decir, construir el layout por section como contenedores de padres supremos; dentro del mismo contenedor que fracciona la section superior dentro de la jerarquia.
 
 ejemplo:
 
@@ -485,9 +485,9 @@ ejemplo:
 
 ### En el caso de CSS.
 
-De igual forma comentar el código en cascada CSS con el mismo orden jerárquico que se tiene en el html. Es decir, ser consecuente entre el despliegue secuencial de html, sea el mismo orden secuencial y consecuente en css. Lo mismo, se aplica en JS.
+De igual forma comentar el código en cascada en CSS, con el mismo orden jerárquico que se tiene en el html, es decir, ser consecuente entre el despliegue secuencial de html, que sea el mismo orden secuencial y consecuente en css. Lo mismo se aplica en JS.
 
-Dicho orden, determina visualmente una rápidez en conseguir los elementos que esten afectando o este determinado por medio de etiquetas.
+Dicho orden, determina visualmente una rápidez en conseguir los elementos que estén afectados por determinada etiqueta.
 
 ###### uso de imágenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
 
@@ -502,8 +502,9 @@ Dicho orden, determina visualmente una rápidez en conseguir los elementos que e
 
 ### Manipulación del DOM
 
-_ADVERTENCIA_: no usar variable de corte global como _var_ sino de alcance local,
-const: cuando sea una constante el valor y no va a cambiar. Let: si va ser un dato a guardar que tienen a mutar en el flujo del desarrollo de la aplicación.
+_ADVERTENCIA_: no usar variable de corte global como _var_ sino de alcance local.
+- const: cuando sea una constante el valor y no va a cambiar. 
+- Let: si va ser un dato a guardar que tienen a mutar en el flujo del desarrollo de la aplicación.
 
 1.  Las variable _Let_ por convención, se le establece el signo $ al principio de dicho nombre de variable, como norma para determinar que dicha variable guarda elementos del DOM, distinta de otras variable dentro de la aplicación:
 
@@ -519,7 +520,7 @@ let cantidad= 23;
 
 ```
 
-2. Usar _UPPER CASE_
+2. Usar _UPPER_CASE_
 
 ```
 
@@ -533,14 +534,14 @@ const VALOR-PI= 3,1416;
 
 ###### desarrollo rutinario de la celula de ripley.com
 
-Los mailing, son estructuras desarrolladas en bases de plantillas traspiladas en webpack para tener una estructura más rápida. Estableciendo así, un objeto JS que inyecta imagen y url absolutas al html. Enviando a producción y proyectandose el armado secuencial del mailing.
+Los mailing, son estructuras desarrolladas utilizando plantillas bases traspiladas en webpack para tener una estructura más rápida. Estableciendo así, un objeto JS al que se le inyecta imagen y url absolutas al html. Luego se envía a producción, proyectandose el armado secuencial del mailing.
 Aspecto a resaltar **_debe ser enviado a testeo como elemento fundamental de entrega al proveedor_**
 
 > PRIMERA PARTE
 
-Los mailing, como lo descrito anteriormente, se construyen por medio de un JS llamado items, que por medio de un array de objeto, inyecta la imagen previamente cortada y una URL.
+Los mailing, como lo descrito anteriormente, se construyen por medio de un archivo JS llamado items. Los items constan de un objeto, donde se inyecta una imagen previamente cortada y una URL designada.
 
-> _ADVERTENCIA_: los link de objetos que no han sido señalados ni instruidos desde la tarea, siempre deben llevar al _home_, en dado caso, no den una instrucción distinta. Por _default_ siempre al home.
+> _ADVERTENCIA_: los link de objetos que no han sido señalados ni instruidos desde la tarea, siempre deben llevar al _home_, si no hay una instrucción al respecto, se linkea por _default_ al home.
 
 > Existen dos elementos: un objeto y un array, sirven dependendiendo de la propuesta gráfica.
 
@@ -560,7 +561,7 @@ link: "https://simple.ripley.cl/",
 
 #### Array dual o bloque
 
-Es usado cuando en una sola section existe dos imágenes antagónicas y a su vez, las URL también tiene dicha característica contraria.
+Es usado cuando en una sola section existe dos imágenes antagónicas, cada una con una URL determinada.
 
 ```
 
@@ -581,10 +582,10 @@ link: "https://simple.ripley.cl/supermercado/despensa",
 
 #### Array triple o bloque
 
-Caso excepcional y rara vez sucede.
+Caso excepcional y que rara vez sucede.
 _ADVERTENCIA_ solicitar al diseñador que esta section sea cortada de manera equitativa en tres partes para el armado.
 
-> Verificar, el html en producción, cada width contenga el 33%. Esto, sea evidencia debido a la división del 100% de la imagen en tres partes iguales.
+> Verificar en html en producción que cada width sea de 33%. Esto, sea evidencia debido a la división del 100% de la imagen en tres partes iguales.
 
 ```
 {
@@ -598,18 +599,18 @@ photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
 link: "https://simple.ripley.cl/supermercado/despensa",
 },
 
-        {
-          photo: require("../img/images/04-ultimosdias2-vertical6_03.jpg"),
-          link: "https://simple.ripley.cl/supermercado/despensa",
-        },
-      ],
-    },
+{
+photo: require("../img/images/04-ultimosdias2-vertical6_03.jpg"),
+link: "https://simple.ripley.cl/supermercado/despensa",
+},
+],
+},
 
 ```
 
-#### Banner promocional de banco ripley o eventualidad puntual
+#### Banner promocional de banco ripley o evento temporal
 
-Este banner, se localiza en el footer del mailing. Determinando unas URL adicionales que siempre van. Pero tienen la características de ser modificado cada mes.
+Este banner, se localiza en el footer del mailing con una URL asociada. Tienen la características de ser modificado cada mes, y algunos se añaden temporalmente por algún evento en particular.
 
 ```
 
@@ -622,9 +623,9 @@ link: "https://www.bancoripley.cl/solicitar-tarjeta-online?utm_source=ripley-com
 
 > SEGUNDA PARTE
 
-Si los elementos legales, son muy extensos al final del mailing, se debe justificar sino centralizar. Se plantea o modifica directo al HTML que es traspilado en la carpeta _dist_ una vez que se mande a producción.
+Si los elementos legales son muy extensos al final del mailing, se deben justificar o centralizar. Se plantea o modifica directo al HTML que es traspilado en la carpeta _dist_ una vez que se mande a producción.
 
-Ejemplo de vigencia + legal que contiene una extensión super a la normal. Se establece tambien la doble etiqueta _<br>_
+Ejemplo de vigencia + legal que contiene una extensión superior a la normal, en el cual se establece también una doble etiqueta _<br>_
 para enfatizar el orden visual y la separación entre parrafos.
 
 ```
@@ -639,7 +640,7 @@ para enfatizar el orden visual y la separación entre parrafos.
 > TERCERA PARTE
 > Mailing informativos.
 
-Son elementos informativos de rápida construcción, donde se establece, un mensaje directo y preciso. Para efectos de armado, se debe establecer su estructura y corte adecuado al diseño, se manda a producción y directamente en el html final, se plantea el comentar las fracciones que no se deben proyectar, tal es el caso:
+Son elementos informativos de rápida construcción, donde se establece un mensaje directo y preciso. Para efectos de armado, se debe establecer su estructura y corte adecuado al diseño, se manda a producción y directamente en el html final, se plantea el comentar las fracciones que no se deben proyectar.
 
 Aspectos a considerar:
 
@@ -678,7 +679,7 @@ Consiste en desarrollar e inyectar un campo variable para que se determine difer
 
 ###### Estructuras diversas en su composición que van desde botoneras que conllevan a enrutamientos absolutos, como también, carousel circular y en forma de tarjetas.
 
-Normalmente, dichas piezas van en las cabeceras de las landing y de diferentes mundos del ecosistema de Ripley.com
+Normalmente, dichas piezas van en las cabeceras de las landing y de los diferentes mundos en el ecosistema de Ripley.com
 
 Existen varios elementos a considerar entre las IC dinámicas mas antiguas, se describe como una botonera flexible y adaptable a mobile y muchas veces lleva banner que dependiendo del boton van cambiando dicho elemento.
 
@@ -711,7 +712,7 @@ const data = [
 
 #### Se modifica para los aspectos gráficos y cromáticos de la ic dinámica.
 
-Espeficaciones determinadas en la tarea.
+Especificaciones determinadas en la tarea.
 
 ```
 $caja-on: #363636;
