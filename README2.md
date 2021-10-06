@@ -884,14 +884,12 @@ ejemplo:
 ```
 
 En el caso de las landing:
-Se debe armar la carpeta que contenga todos los elementos del workflow, entendiendose la triada original (html/css/js) de todo navegador. Pero, la diferencia es que se debe generar una carpeta padre en la sección landing del servidor y dentro de ella subir las multiples pruebas que se realizan a la hora del armado y funcionalidad. De esa manera, se mantiene un orden entre elementos finales y pruebas internas.
+Se debe armar la carpeta que contenga todos los elementos del workflow, entendiendose la triada original (html/css/js) de todo navegador. Pero, la diferencia es que se debe generar una carpeta padre en la sección landing del servidor y dentro de ella subir las múltiples pruebas que se realizan a la hora del armado y funcionalidad. De esa manera, se mantiene un orden entre elementos finales y pruebas internas.
 
 Caso de ic dinamica/ circulares y tarjeta:
-se plantea el mismo factor logico que los mailing pero con la condición de trasladarlo o subirlos en las carpetas madre de dicha descripción.
+se plantea el mismo factor lógico que los mailing pero con la condición de trasladarlo o subirlos en las carpetas madre de dicha descripción.
 
 # Creación de biblioteca de front.
-
-**nati por favor revisar la redacción de este parrafo**
 
 Se buscará de manera semanal el desarrollo de cada miembro de presentar bloques de código resueltos, y eventualidades del DOM con diferentes animaciones de elementos para tenerlos listos a desarrollo para su pronta escogencia al departamento de diseño. Dicha fabrica y posterior almacenamiento, en un codepen destinado para la agencia CABEZA, busca introducir patrones de resoluciones de problemas de interacción de usuario conjuntamente con JS para su aplicación y refactorización con rápidez, trayendo ventajas de tiempo y suministro de ideas potentes que enfaticen nuestro producto al cliente.
 
