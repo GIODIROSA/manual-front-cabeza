@@ -408,8 +408,6 @@ De igual forma comentar el código en cascada en CSS, con el mismo orden jerárq
 
 Dicho orden, determina visualmente una rápidez en conseguir los elementos que estén afectados por determinada etiqueta.
 
-###### uso de imágenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
-
 ### Implementación de orden de código. (caso JS)
 
 1.  Importación de módulos.
@@ -597,7 +595,7 @@ module.exports = general;
 
 ###### Estructuras variante y dependiendo de la instrucción del Product Manager.
 
-Consiste en desarrollar e inyectar un campo variable para que se determine diferentes aspectos dinámicos al layout en la visual del usuario. Dicho elemento, se arma con imagenes cortadas dadas por el diseñador e implementadas por el front, contemplando y tomando en cuenta la salvedad, desde el html, se arma la fracción que conllevará el campo variable.
+Consiste en desarrollar e inyectar un campo variable para que se determine diferentes aspectos dinámicos al layout en la visual del usuario. Dicho elemento, se arma con imágenes cortadas dadas por el diseñador e implementadas por el front, contemplando y tomando en cuenta la salvedad, desde el html, se arma la fracción que conllevará el campo variable.
 
 > ¡Una excepción!: se estipula la etiqueta style y su cierre en el head antes del body para afectar directamente al html, producto que dicho elemento ya paso por la traspilación y se encuentra en calidad de producción. Por ese aspecto y solo por ese motivo, se permite la flexibilidad de las buenas practicas en el uso de style dentro del archivo html.
 
@@ -607,7 +605,7 @@ Consiste en desarrollar e inyectar un campo variable para que se determine difer
 
 Normalmente, dichas piezas van en las cabeceras de las landing y de los diferentes mundos en el ecosistema de Ripley.com
 
-Existen varios elementos a considerar entre las IC dinámicas mas antiguas, se describe como una botonera flexible y adaptable a mobile y muchas veces lleva banner que dependiendo del boton van cambiando dicho elemento.
+Existen varios elementos a considerar entre las IC dinámicas más antiguas, se describe como una botonera flexible y adaptable a mobile y muchas veces lleva banner que dependiendo del boton van cambiando dicho elemento.
 
 Ejemplo:
 
@@ -618,6 +616,8 @@ Descripción del array de objetos.
 3. banners: objeto que inyecta el banner para desktop y para mobile
 
 ```
+<!-- ESTRUCTURA DE CÓDIGO PERTENECIENTE A IC DINÁMICA ANTIGUAS -->
+
 const imageDesktop = "../images/1.jpg";
 const imageMobile = "../images/1-mb.jpg";
 
