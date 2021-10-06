@@ -117,7 +117,7 @@ function exampleFunction (name){
 
 ---
 
-### Implementación de media queries.
+# Implementación de media queries.
 
 principio filosofico para conllevar a la praxis. Mobile first
 
@@ -398,6 +398,12 @@ ejemplo:
 
 ```
 
+### En el caso de CSS.
+
+De igual forma comentar el código en cascada CSS con el mismo orden jerarquico que se tiene en el html. Es decir, ser consecuente entre el despliegue secuencia de html sea el mismo orden secuencial y consecuente en css. Lo mismo se aplica en JS.
+
+Dicho orden, determina visualmente una rapidez de conseguir el elemento que este afectando o este determinado por medio de etiquetas.
+
 ###### uso de imagenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
 
 ### Implementación de orden de código. (caso JS)
@@ -451,12 +457,67 @@ Los mailing, como lo descrito anteriormente, se construyen por medio de un JS ll
 
 > _ADVERTENCIA_: los link de objetos que no han sido señalados ni instruidos desde la tarea, siempre deben llevar al _home_, en dado caso, no dan una instrucción distinta. Por _default_ siempre al home.
 
+> Existen dos elementos un objeto y un array, sirven dependendiendo de la propuesta gráfica.
+
+#### Objecto Simple
+
+Es usado cuando hay una sola section cortada en la maqueta y te conduce a una sola url.
+Es decir, una imagen, una URL.
+
 ```
 
 {
 photo: require("../img/images/03-blandosgenericos_01.jpg"),
 link: "https://simple.ripley.cl/",
 },
+
+```
+
+#### Array dual o bloque
+
+Es usado cuando en una sola section existe dos imagenes antagonicas y a su vez las URL tambien tiene dicha caracteristica contraria.
+
+```
+ {
+      block: [
+        {
+          photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
+          link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
+        },
+        {
+          photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
+          link: "https://simple.ripley.cl/supermercado/despensa",
+        },
+      ],
+    },
+
+```
+
+#### Array triple o bloque
+
+Caso excepcional y rara vez sucede.
+_ADVERTENCIA_ solicitar al diseñador que esta section sea cortada de manera equitativa en tres partes para el armado.
+
+> Verificar en el html final en producción que cada width contenga el 33%. Esto se evidencia debido a la división del 100% de la imagen en tres partes iguales.
+
+```
+ {
+      block: [
+        {
+          photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
+          link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
+        },
+        {
+          photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
+          link: "https://simple.ripley.cl/supermercado/despensa",
+        },
+
+        {
+          photo: require("../img/images/04-ultimosdias2-vertical6_03.jpg"),
+          link: "https://simple.ripley.cl/supermercado/despensa",
+        },
+      ],
+    },
 
 ```
 
@@ -547,6 +608,153 @@ const data = [
 ]
 ```
 
-```
+### Elemento de SASS (búsqueda de reforma de las estructuras actuales para la refactorización)
+
+#### Se modifica para los aspectos gráficos y cromáticos de la ic dinámica.
+
+Espeficaciones determinadas en la tarea.
 
 ```
+$caja-on: #363636;
+$caja-off: #ea4c61;
+$texto-on: #fff;
+$texto-off: #fff;
+$borde: #000;
+$border-opacity: 0.1;
+
+```
+
+#### Hacer _build_ ejecuta la construcción del array de objeto.
+
+> Entregando en producción diferentes html que posterior seran ensamblados por Webmaster en Ripley.com
+
+## IC DINÁMICA CIRCULAR
+
+Se plantea como elemento carousel, determinando en pantalla la cantidad de items entregado por el diseñador en el boceto aprobado por PM. La manera de la entrega del mismo, son imagenes sueltas por medio de un zip, facilitadas por el diseñador. Para ser implementadas.
+
+La implementación según Webmaster tiene una normativa en su configuración
+
+> _Alerta_: la estructura debe cambiar en la brevedad por ser desarrollada con un carousel de caracteristicas arcaicas y tiene un mantenimiento nulo.
+
+Esta estructura contiene un cintillo que será comentado o descomentado dependiendo del requerimiento establecido y la aprobación de boceto de diseño y PM.
+
+### Considerar:
+
+> eliminar el atributo _with: auto_ para que el cintillo quede centrado.
+> copiar fragmento de código refactorizado
+
+```
+ <!-- espacio CINTILLO PUBLICITARIO -->
+  <a href="#" class="cintillo-icnueva">
+    <picture>
+      <source
+        media="(min-width:1000px)"
+        srcset="assets/img/Cintillo-desk.jpg"
+      />
+      <img src="assets/img/Cintillo-mob.jpg" alt="cintillo infantil" />
+    </picture>
+  </a>
+  <!--FIN -->
+
+```
+
+#### Estructura en HTML de la IC circular.
+
+```
+
+ <div id="ic-container">
+    <div class="iccarousel-nueva owl-carousel owl-theme">
+      <a
+        href="https://simple.ripley.cl/deporte-y-aventura/camping-y-tiempo-libre/carpas-y-sacos?icd-camping-carpas-sacos"
+        class="item active"
+      >
+        <img src="assets/img/carpa.png" alt="carpas y sacos" />
+        <h2>carpas y sacos</h2>
+      </a>
+
+```
+
+#### Configuración a considerar dependiendo de los items entregados.
+
+## 1. Menor a 5.
+
+```
+$("#ic-container .iccarousel-nueva").owlCarousel({
+  loop: false,
+  autoplay: true,
+  nav: true,
+  navText: [
+    "<div class='nav-btn prev-slide'></div>",
+    "<div class='nav-btn next-slide'></div>",
+  ],
+  items: 5,
+  responsive: {
+    0: {
+      items: 2,
+    },
+    500: {
+      items: 3,
+    },
+    750: {
+      items: 3,
+    },
+    1000: {
+      items: 4,
+    },
+  },
+});
+
+```
+
+## 2. _Mayor a 5_.
+
+```
+$("#ic-container .iccarousel-nueva").owlCarousel({
+  loop: false,
+  autoplay: true,
+  nav: true,
+  navText: [
+    "<div class='nav-btn prev-slide'></div>",
+    "<div class='nav-btn next-slide'></div>",
+  ],
+  items: 5,
+  responsive: {
+    0: {
+      items: 2,
+    },
+    500: {
+      items: 3,
+    },
+    750: {
+      items: 4,
+    },
+    1000: {
+      items: 5,
+    },
+  },
+});
+
+```
+
+#### Configuración CSS.
+
+> Se determinó con webmaster esta depuración del 80% en el width para cuando se monte en el marco de ripley quede adecuado y no se encoja.
+
+```
+#ic-container {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  /*padding: 10px 0;*/
+  margin-bottom: -30px;
+}
+
+```
+
+---
+
+## IC DINÁMICA TARJETA
