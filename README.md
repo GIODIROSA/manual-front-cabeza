@@ -10,13 +10,21 @@ Manual de uso que busca **_desarrollar normativas en apoyo a la toma de decision
 
 ---
 
+El manual tiene como destino y funcionalidad estar siempre actualizado y reformulado a medida que se presentan experiencias de uso que determinen un patron de diseño a seguir dentro del software. A su vez, este manual tiene características orgánicas e híbridas, para que su relación con la praxis sea lo más fiel a la realidad de productividad. Busca la unificación de criterios y metologías aplicadas para que las fuerzas ejercidas en el remo sea bajo una dirección clara y precisa.
+
+## Preceptos
+
+# ORDEN/ RENDIMIENTO/ OPTIMIZACIÓN/ REFACTORIZACIÓN
+
+---
+
 ### Desarrollo de Landing.
 
 `Las landing son estructuras visuales simples en su planteamiento` pero generan complejidades por las composiciones diversas e interacciones que se busca producto del tono de la marca y el cliente. Estableciendo así, verdaderas piezas gráficas interactivas con el usuario que implementan, la atracción perfecta para la conducta y el objetivo que se necesita.
 
 Por ende, se requiere de la creación de un manual y documentación que establezca el patron a seguir dentro del esqueleto adaptativo y objetivo de la optimización y mantención del mismo.
 
-#### Reglas:
+#### Reglas madres:
 
 1. Etiquetas **MADRES**:
 
@@ -168,13 +176,84 @@ Se podrá usar una medida más pequeña particularmente sea el caso de uso que a
 
 ```
 
+### Configuración de layout, estipulado por Ripley.
+
+bloque de código CSS que debe estar enmarcado cada layout que se desarrolle.
+
+```
+#LANDING-MARKETPLACE {
+    max-width: 1140px;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+  }
+```
+
+> _Nota_: el total de width y el marco que lo encierra el layout de la landing es de 1140px pero hay elementos internos que van a requerir de un `max-width: 1000px; / max-width: 900px` todo va a depender del diseño de la maqueta.
+
+### Norma de cliente Ripley para el uso de la tipografía general.
+
+CDN- HEAD- HTML:
+
+```
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap"
+        rel="stylesheet"
+      />
+```
+
+Uso en style.css
+
+```
+    font-family: "Montserrat", sans-serif;
+```
+
+### CDN autorizado para el uso de icono.
+
+```
+  <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous"
+      />
+
+```
+
+**ADVERTENCIA**: etiquetas HTML que no deben ser usadas. Producto del choque contra la estructura el cliente.
+
+etiqueta HTML o atributo:
+
+1. footer
+2. class container
+3. main
+4. header
+5. navbar
+
+> _Nota:_ cualquier etiqueta generica o semántica produce un choque eminente en la estructura del cliente. Solo está permitido `<section></section>` , `<div></div>`; section como elemento mayor y jerarca. div como separador interno de bloques y padre de elemento directo.
+
+### Manera de nombrar class.
+
+Se determinó que los id serán establecidos en **UPPER_CASE** mientras que las clases serán en **lowerCamelCase** pero con la facultad de ser declarativos y preciso para su interpretación. Coincidiendo con su funcionalidad o rol dentro del layout.
+
+ejemplo:
+
+1. parrafoQueEsElMarktplace
+2. wrapTextoComorSerParteMarketplace
+3. parrafoComoserParteMarketplace
+
+> Código Limpio, determina que el uso de clases declarativas sin importar el largo del mismo potencia su actuar a la hora del mantenimiento del código y de su lectura 6 meses posterior a su realización facilitando su rápida compresión y ubicación de la misma. El nombramiento de las clases, es vital para su rapida localización y actuar en su modificación.
+
 ### Etiquetas HTML excepcional
 
 ###### uso de imagenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
 
 **ADVERTENCIA**: atributo importante
 
-```
+````
+
 type="image/webp"
 
 ```
@@ -200,7 +279,6 @@ type="image/webp"
                 <img src="./assets/img/mob/box4-mb.jpg" />
               </picture>
 
-
 ```
 
 ### Uso de librería de native JS. carousel SPLITE
@@ -216,6 +294,7 @@ instalación y linkeado de la librería.
 **HEAD** con el siguiente orden de carga.
 
 ```
+
 <link rel="stylesheet" href="./assets/css/style.css" />
       <link rel="stylesheet" href="./assets/css/splide.min.css" />
 
@@ -231,7 +310,6 @@ instalación y linkeado de la librería.
       <!-- MAIN JS -->
       <script src="./assets/js/main.js"></script>
 
-
 ```
 
 #### Estructura JS del carousel para la manipulación del carousel
@@ -241,6 +319,7 @@ instalación y linkeado de la librería.
 > En el html se establece el contenedor _DIV_ que va a contener el id para la activación del carousel
 
 ```
+
 new Splide("#carouselMarcas", {
 perPage: 5,
 breakpoints: {
@@ -263,14 +342,13 @@ se determina la especificidad del mismo.
 
 ```
 
- #carouselMarcas .splide__arrow--prev {
-    left: -3rem;
-  }
+#carouselMarcas .splide\_\_arrow--prev {
+left: -3rem;
+}
 
-  #carouselMarcas .splide__arrow--next {
-    right: -2rem;
-  }
-
+#carouselMarcas .splide\_\_arrow--next {
+right: -2rem;
+}
 
 ```
 
@@ -298,6 +376,7 @@ La fragmentación de la estructura, es de vital importancia para la segmentació
 ejemplo:
 
 ```
+
  <!-- CASO DE EXITO -->
 
         <section id="wrapCasosExito">
@@ -478,18 +557,19 @@ link: "https://simple.ripley.cl/",
 Es usado cuando en una sola section existe dos imagenes antagonicas y a su vez las URL tambien tiene dicha caracteristica contraria.
 
 ```
- {
-      block: [
-        {
-          photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
-          link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
-        },
-        {
-          photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
-          link: "https://simple.ripley.cl/supermercado/despensa",
-        },
-      ],
-    },
+
+{
+block: [
+{
+photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
+link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
+},
+{
+photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
+link: "https://simple.ripley.cl/supermercado/despensa",
+},
+],
+},
 
 ```
 
@@ -501,16 +581,17 @@ _ADVERTENCIA_ solicitar al diseñador que esta section sea cortada de manera equ
 > Verificar en el html final en producción que cada width contenga el 33%. Esto se evidencia debido a la división del 100% de la imagen en tres partes iguales.
 
 ```
- {
-      block: [
-        {
-          photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
-          link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
-        },
-        {
-          photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
-          link: "https://simple.ripley.cl/supermercado/despensa",
-        },
+
+{
+block: [
+{
+photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
+link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
+},
+{
+photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
+link: "https://simple.ripley.cl/supermercado/despensa",
+},
 
         {
           photo: require("../img/images/04-ultimosdias2-vertical6_03.jpg"),
@@ -528,9 +609,9 @@ Este banner, se localiza en el footer del mailing. Determinando unas URL adicion
 ```
 
 {
-      photo: require("../img/banners/cyber2.jpg"),
-      link: "https://www.bancoripley.cl/solicitar-tarjeta-online?utm_source=ripley-com&utm_medium=mail_footer&utm_campaign=captacion_jun21",
-    },
+photo: require("../img/banners/cyber2.jpg"),
+link: "https://www.bancoripley.cl/solicitar-tarjeta-online?utm_source=ripley-com&utm_medium=mail_footer&utm_campaign=captacion_jun21",
+},
 
 ```
 
@@ -780,8 +861,6 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 
 > Se aplica la misma determinación de IC DINÁMICA CIRCULA. Solo cambia, el elemento visual de forma.
 
-## ¡ADVERTENCIA!
-
 Recordar que el primer elemento se debe especificar en su clase para la activación del css la clase **active**
 
 Si en el caso contrario se quiere desactivar eventualidades de hover a un elemento o items particular. Se estipula en inline (html) el atributo `pointer-events: none;` a la etiqueta señalada para que elimine el evento y quede desactivado.
@@ -848,3 +927,12 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 }
 
 ```
+
+## ¡ADVERTENCIA!
+
+Dichas estructuras deben ser siempre revisadas y refactorizadas en el tiempo para su mantención, el uso de librerías o de factores de código ya construido y aplicado determina una fiel atención para una modernización o evaluación de sus componente sigan estando vigente.
+
+> La recomendación, establecer siempre los ambitos nativo a medida que vayan siendo aceptados por los navegadores y puesto en practicas por las diferentes versiones de mejoras en la codificación.
+
+# Creación de biblioteca de front.
+````
