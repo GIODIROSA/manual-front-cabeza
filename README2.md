@@ -126,7 +126,7 @@ Dentro de los manuales de webmaster del cliente, se ha establecido que desde 768
 
 ## Syntax de media queries
 
-Se establece `@media (min-width: 768px)` como syntax a usar. Estableciendo, min-width como quiebre para desktop y resoluciones superior. Los elementos fuera de esa sentencia se establecen como mobile.
+Se establece `@media (min-width: 768px)` como syntax a usar. Estableciendo, min-width como quiebre para desktop y resoluciones superiores. Los elementos fuera de esa sentencia se establecen como mobile.
 
 ```
 <!-- ejemplo de encapsulamiento de sentencia de media querie -->
@@ -173,7 +173,7 @@ Bloque de código CSS que enmarca cada layout que se desarrolle.
   }
 ```
 
-> _Nota_: El total de width y el marco que encierra al layout de la landing es de 1140px, pero hay elementos internos que van a requerir de un `max-width: 1000px; / max-width: 900px` todo va a depender del diseño de la maqueta.
+> _Nota_: el total de width y el marco que encierra al layout de la landing es de 1140px, pero hay elementos internos que van a requerir de un `max-width: 1000px; / max-width: 900px` todo va a depender del diseño de la maqueta.
 
 ### Norma de cliente Ripley para el uso de la tipografía general.
 
@@ -200,7 +200,7 @@ Uso en style.css
 
 **ADVERTENCIA**: Existen etiquetas HTML que no deben ser usadas, ya que causan un "choque" contra la estructura del cliente.
 
-etiquetas HTML o atributos no permitidos:
+Etiquetas HTML o atributos no permitidos:
 
 1. footer
 2. class container
