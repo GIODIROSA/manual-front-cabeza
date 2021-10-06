@@ -286,7 +286,7 @@ Se determina que **no se usará un procesador** producto de los elementos de act
 2. Less
 3. Stylus
 
-# SEMÁTICA
+# SEMÁNTICA
 
 ## La importancia en comentar el código.
 
