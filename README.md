@@ -1,18 +1,16 @@
-# Manual de uso para Front en Agencia Cabeza
+# Manual de uso para Front en la agencia CABEZA
 
-###### documentación basada en las buenas prácticas de "Code Clean" (Robert C. Martin).
+###### documentación basada en las buenas prácticas de CODE CLEAN. ROBERT C. MARTIN
 
 ###### > Ærlighed i små ting er ikke nogen lille ting --> "La honestidad por las cosas pequeñas no es algo menor"
 
 ## Prologo
 
-Este manual de uso busca **_desarrollar normativas de apoyo en la toma de decisiones_** para la creación de infraestructura de software. Estableciendo metodologías y parámetros para estandarizar las creaciones y optimizar el mantenimiento de estas.
-La integración de estos patrones por parte de cada desarrollador del equipo es fundamental para lograr un desarrollo sostenible.
+Manual de uso que busca **_desarrollar normativas en apoyo a la toma de decisiones_** para la creación de infraestructura de software. Normando y estableciendo, metodologías entre sus miembros para la mantención y creación de la misma; en plenitud, el entendimiento de patrones para la integración de cada desarrollador en el equipo. Canalizando, una manera de desarrollo sostenible y documentada.
 
 ---
 
-El manual requiere estar en constante actualización y debe ser reformulado en la medida en que se presenten experiencias que determinen agregar/quitar/actualizar según avanza la tecnología en el diseño de software. 
-Este manual contiene características orgánicas e híbridas, para que su relación con la praxis sea lo más fiel a la realidad de productividad. 
+El manual tiene como destino y funcionalidad estar siempre actualizado y reformulado a medida que se presentan experiencias de uso que determinen un patron de diseño a seguir dentro del software. A su vez, este manual tiene características orgánicas e híbridas, para que su relación con la praxis sea lo más fiel a la realidad de productividad. Busca la unificación de criterios y metologías aplicadas para que las fuerzas ejercidas en el remo sea bajo una dirección clara y precisa.
 
 ## Preceptos
 
@@ -22,45 +20,13 @@ Este manual contiene características orgánicas e híbridas, para que su relaci
 
 ### Desarrollo de Landing.
 
-`Las landing son estructuras visuales simples en su planteamiento` pero generan complejidad al desarrollarlas, la marca y el cliente buscan hacer un llamado de atención mediante una pieza original pensada en la conducta de un usuario en particular, recurriendo a una estructura compleja con interacciones diversas. Estableciendo así, verdaderas piezas gráficas de uso único, es decir, no es posible crear una maqueta base o prototipo para el desarrollo de las landing.
+`Las landing son estructuras visuales simples en su planteamiento` pero generan complejidades por las composiciones diversas e interacciones que se busca producto del tono de la marca y el cliente. Estableciendo así, verdaderas piezas gráficas interactivas con el usuario que implementan, la atracción perfecta para la conducta y el objetivo que se necesita.
 
-Pero si se pueden establecer ciertas normas a seguir para optimizar su desarrollo y facilitar una potencial mantención.
+Por ende, se requiere de la creación de un manual y documentación que establezca el patron a seguir dentro del esqueleto adaptativo y objetivo de la optimización y mantención del mismo.
 
 #### Reglas madres:
 
-1. Normas de escritura ARCHIVOS/ID/CLASS/VARIABLES:
-
-A) **Nomenclatura para nombrar archivos**
-
-```
-<!-- numero del día, seguido de un guión medio, nombre declarativo de la actividad -->
-
-03-soloxhoy
-10-octubre
-
-```
-
-B) **Norma UPPER_CASE para nombrar clases y id**
-
-```
-const UNA_CONSTANTE (caso de JSE6)
-
-id="LANDING-EXAMPLE" (caso de html)
-
-#LANDING-EXAMBLE (caso de style.css)
-
-```
-
-C) **Norma lowerCamelCase para nombrar clases y id**
-
-para nombrar clases: `class`
-
-```
-class="wrapTextoMarketplace"
-
-```
-
-2. Etiquetas **MADRES**:
+1. Etiquetas **MADRES**:
 
 ejemplo: etiquetas ** envolventes (wrap) ** otorgadas por Ripley para el reconocimiento en la plataforma.
 
@@ -109,6 +75,37 @@ _SCRIPT_
 
 ---
 
+2. Normas de escritura ARCHIVOS/ID/CLASS/VARIABLES:
+
+A) **Nombrar archivos**
+
+```
+<!-- numero del día, seguido de un guión medio, nombre declarativo de la actividad -->
+
+03-soloxhoy
+10-octubre
+
+```
+
+B) **UPPER_CASE**
+
+```
+const UNA_CONSTANTE (caso de JSE6)
+
+id="LANDING-EXAMPLE" (caso de html)
+
+#LANDING-EXAMBLE (caso de style.css)
+
+```
+
+C) **lowerCamelCase**
+
+para nombrar clases: `class`
+
+```
+class="wrapTextoMarketplace"
+
+```
 
 elementos primitivos.
 
@@ -134,13 +131,12 @@ principio filosófico para conllevar a la praxis. _Mobile first_
 
 > ¿Qué hacer si el diseño de desktop se encuentra entregado en la tarea y no se ha desarrollado el mobile?
 
-Bajo la tónica de cascada de CSS, se añaden en primera instancia los estilos para la vista mobile, y dentro de media queries los estilos para la vista desktop u otra que sea necesaria (tablet, etc).
-
-Cuando las condiciones no son estas, es decir, tenemos el diseño de la vista desktop antes que la vista mobile, para efectos de rapidez y productividad, se establece el desarrollo de desktop dentro de la sentencia de media queries, reservando el espacio superior para los estilos de mobile.
+Para efectos de rapidez y productividad, se establece el desarrollo de desktop dentro de la
+sentencia de media queries. Reservando su espacio y bajo la tónica de cascada de CSS. Se encuentre en las primeras líneas de código el mobile y encapsulado en su media querie, el desktop.
 
 > ¿Qué medida de breackpoint se usa para el cambio de adaptabilidad de pantalla de mobile a desktop?
 
-Dentro de los manuales de webmaster del cliente, se ha establecido que desde 768px hacia arriba se plantea el layout de desktop, desde 768px hacia abajo se concentra mobile.
+Dentro de los manuales de webmaster del cliente, se ha establecido 768px mayor hacia adelante se plantea el layout de desktop menor a esa medida; se concentra mobile.
 
 ## Syntax de media queries
 
@@ -182,7 +178,7 @@ Se podrá usar, una medida más pequeña particularmente sea el caso de uso que 
 
 ### Configuración de layout, estipulado por Ripley.
 
-Bloque de código CSS que enmarca cada layout que se desarrolle.
+bloque de código CSS que debe estar enmarcado cada layout que se desarrolle.
 
 ```
 #LANDING-MARKETPLACE {
@@ -193,7 +189,7 @@ Bloque de código CSS que enmarca cada layout que se desarrolle.
   }
 ```
 
-> _Nota_: El total de width y el marco que encierra al layout de la landing es de 1140px, pero hay elementos internos que van a requerir de un `max-width: 1000px; / max-width: 900px` todo va a depender del diseño de la maqueta.
+> _Nota_: el total de width y el marco que lo encierra el layout de la landing es de 1140px pero hay elementos internos que van a requerir de un `max-width: 1000px; / max-width: 900px` todo va a depender del diseño de la maqueta.
 
 ### Norma de cliente Ripley para el uso de la tipografía general.
 
@@ -226,9 +222,9 @@ Uso en style.css
 
 ```
 
-**ADVERTENCIA**: Existen etiquetas HTML que no deben ser usadas, ya que causan un "choque" contra la estructura del cliente.
+**ADVERTENCIA**: etiquetas HTML que no deben ser usadas. Producto del choque contra la estructura el cliente.
 
-etiquetas HTML o atributos no permitidos:
+etiqueta HTML o atributo:
 
 1. footer
 2. class container
@@ -236,7 +232,7 @@ etiquetas HTML o atributos no permitidos:
 4. header
 5. navbar
 
-> _Nota:_ Cualquier etiqueta genérica o semántica produce un choque eminente con la estructura del cliente. Solo está permitido `<section></section>` , `<div></div>`; section como elemento mayor y jerarca. Div, como separador interno de bloques y padre de elemento directo.
+> _Nota:_ cualquier etiqueta genérica o semántica produce un choque eminente en la estructura del cliente. Solo está permitido `<section></section>` , `<div></div>`; section como elemento mayor y jerarca. Div, como separador interno de bloques y padre de elemento directo.
 
 ### Manera de nombrar class.
 
@@ -248,7 +244,7 @@ ejemplo:
 2. wrapTextoComorSerParteMarketplace
 3. parrafoComoserParteMarketplace
 
-> Código Limpio, determina que el uso de clases declarativas sin importar el largo del mismo potencia su actuar a la hora del mantenimiento del código y de su lectura incluso 6 meses posterior a su realización; facilitando su rápida compresión y ubicación de la misma. El nombramiento de las clases, es vital para su rápida localización y actuar en su modificación.
+> Código Limpio, determina que el uso de clases declarativas sin importar el largo del mismo potencia su actuar a la hora del mantenimiento del código y de su lectura 6 meses posterior a su realización; facilitando su rápida compresión y ubicación de la misma. El nombramiento de las clases, es vital para su rápida localización y actuar en su modificación.
 
 ### Etiquetas HTML excepcional
 
@@ -971,7 +967,7 @@ Se buscará de manera semanal el desarrollo de cada miembro de presentar bloques
 
 ## front end developer 2021
 
-1. Adrián Figueroa.
-2. Natalia Jiménez.
+1. Adrian Figueroa.
+2. Natalia Jimenez.
 3. Cynthia Medina.
 4. Giovanni Di Rosa.
