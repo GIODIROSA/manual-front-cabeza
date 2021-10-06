@@ -927,7 +927,6 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 }
 
 ```
-
 ## ¡ADVERTENCIA!
 
 Dichas estructuras deben ser siempre revisadas y refactorizadas en el tiempo para su mantención, el uso de librerías o de factores de código ya construido y aplicado determina una fiel atención para una modernización o evaluación de sus componente sigan estando vigente.
@@ -937,13 +936,22 @@ Dichas estructuras deben ser siempre revisadas y refactorizadas en el tiempo par
 # Reset de archivo para ser subidos al servidor.
 
 Se debe establecer en el caso de mailing:
-Armar en una carpeta con día seguida de un guión medio la actividad declarativa que fue enfatizada o señalada en la tarea, conjuntamente y dependiendo del caso, producto de multiples cambios la numeración del archivo para su diferenciación en el servidor. Recordando *los servidores tienen memoria cache por ende los archivos a ser subidos deben tener diferentes nombres si es de ser los mismos* evidentemente, borrar los archivos que no aplican a posterior. Resguardando el orden mensual del mismo. 
+Armar en una carpeta con día seguida de un guión medio la actividad declarativa que fue enfatizada o señalada en la tarea, conjuntamente y dependiendo del caso, producto de multiples cambios la numeración del archivo para su diferenciación en el servidor. Recordando _los servidores tienen memoria cache por ende los archivos a ser subidos deben tener diferentes nombres si es de ser los mismos_ evidentemente, borrar los archivos que no aplican a posterior. Resguardando el orden mensual del mismo.
+
+ejemplo:
+
+```
+1. 04-ultimosdias
+2. 05-soloxhoy
+3. 06-genericos
+
+```
 
 En el caso de las landing:
 Se debe armar la carpeta que contenga todos los elementos del workflow, entendiendose la triada original (html/css/js) de todo navegador. Pero, la diferencia es que se debe generar una carpeta padre en la sección landing del servidor y dentro de ella subir las multiples pruebas que se realizan a la hora del armado y funcionalidad. De esa manera, se mantiene un orden entre elementos finales y pruebas internas.
 
 Caso de ic dinamica/ circulares y tarjeta:
-se plantea el mismo factor logico que los mailing pero con la condición de trasladarlo o subirlos en las carpetas madre de dicha descripción. 
+se plantea el mismo factor logico que los mailing pero con la condición de trasladarlo o subirlos en las carpetas madre de dicha descripción.
 
 # Creación de biblioteca de front.
 
