@@ -521,6 +521,19 @@ _ADVERTENCIA_ solicitar al diseñador que esta section sea cortada de manera equ
 
 ```
 
+#### Banner promocional de banco ripley o eventualidad puntual
+
+Este banner, se localiza en el footer del mailing. Determinando unas URL adicionales que siempre van. Pero tienen la características de ser modificado cada mes.
+
+````
+
+{
+      photo: require("../img/banners/cyber2.jpg"),
+      link: "https://www.bancoripley.cl/solicitar-tarjeta-online?utm_source=ripley-com&utm_medium=mail_footer&utm_campaign=captacion_jun21",
+    },
+
+```
+
 > SEGUNDA PARTE
 
 Si los elementos legales son muy extensos al final del mailing, se debe justificar sino centralizar. Se plantea o modifica directo al HTML que es traspilado en la carpeta _dist_ una vez que se mande a producción.
@@ -528,7 +541,7 @@ Si los elementos legales son muy extensos al final del mailing, se debe justific
 Ejemplo de vigencia + legal que contiene una extensión super a la normal. Se establece tambien la doble etiqueta _<br>_
 para enfatizar el orden visual y la separación entre parrafos.
 
-```
+````
 
 <td align="justify">
                                 <span style="text-align:center;font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#575757; margin:0; padding:0; font-weight:normal;">
