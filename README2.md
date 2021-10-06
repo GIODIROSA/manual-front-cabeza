@@ -421,10 +421,10 @@ Dicho orden, determina visualmente una rápidez en conseguir los elementos que e
 
 _ADVERTENCIA_: no usar variable de corte global como _var_ sino de alcance local.
 
-- const: cuando sea una constante el valor y no va a cambiar.
-- Let: si va ser un dato a guardar que tienen a mutar en el flujo del desarrollo de la aplicación.
+- const: usar cuando sea una constante el valor y no vaya a cambiar.
+- Let: usar si tiene un valor que va a mutar en el flujo del desarrollo de la aplicación.
 
-1.  Las variable _Let_ por convención, se le establece el signo $ al principio de dicho nombre de variable, como norma para determinar que dicha variable guarda elementos del DOM, distinta de otras variable dentro de la aplicación:
+1.  A las variable _Let_ que guardan elementos del DOM, por convención se le antepone el signo $, a diferencia de otras variable let que estén dentro de la aplicación:
 
 ```
 
@@ -454,8 +454,8 @@ const VALOR-PI= 3,1416;
 
 ###### desarrollo rutinario de la celula de ripley.com
 
-Los mailing, son estructuras desarrolladas utilizando plantillas bases traspiladas en webpack para tener una estructura más rápida. Estableciendo así, un objeto JS al que se le inyecta imagen y url absolutas al html. Luego se envía a producción, proyectandose el armado secuencial del mailing.
-Aspecto a resaltar **_debe ser enviado a testeo como elemento fundamental de entrega al proveedor_**
+Los mailing, son estructuras desarrolladas utilizando plantillas bases traspiladas en webpack para tener una estructura más rápida. Estableciendo así, un objeto JS con el que se le inyecta imagen y url absolutas al html. Luego se envía a producción, proyectándose el armado secuencial del mailing.
+Aspecto a resaltar **_debe ser enviado a testeo como elemento fundamental de entrega al proveedor._**
 
 > PRIMERA PARTE
 
@@ -467,8 +467,7 @@ Los mailing, como lo descrito anteriormente, se construyen por medio de un archi
 
 #### Objeto Simple
 
-Es usado cuando hay una sola section cortada en la maqueta y te conduce a una sola URL.
-Es decir, una imagen, una URL.
+Es usado cuando hay una sola section cortada en la maqueta y te conduce a una sola URL, es decir, una imagen, una URL.
 
 ```
 
@@ -506,7 +505,7 @@ Ejemplo visual de bloque duales. insertar imagen de apoyo.
 Caso excepcional y que rara vez sucede.
 _ADVERTENCIA_ solicitar al diseñador que esta section sea cortada de manera equitativa en tres partes para el armado.
 
-> Verificar en html en producción que cada width sea de 33%. Esto, sea evidencia debido a la división del 100% de la imagen en tres partes iguales.
+> Verificar que en el html en producción cada width sea de 33%. Esto, se evidencia debido a la división del 100% de la imagen en tres partes iguales.
 
 ```
 {
@@ -597,7 +596,7 @@ module.exports = general;
 
 Consiste en desarrollar e inyectar un campo variable para que se determine diferentes aspectos dinámicos al layout en la visual del usuario. Dicho elemento, se arma con imágenes cortadas dadas por el diseñador e implementadas por el front, contemplando y tomando en cuenta la salvedad, desde el html, se arma la fracción que conllevará el campo variable.
 
-> ¡Una excepción!: se estipula la etiqueta style y su cierre en el head antes del body para afectar directamente al html, producto que dicho elemento ya paso por la traspilación y se encuentra en calidad de producción. Por ese aspecto y solo por ese motivo, se permite la flexibilidad de las buenas practicas en el uso de style dentro del archivo html.
+> ¡Una excepción!: se estipula la etiqueta style y su cierre en el head antes del body para afectar directamente al html, producto que dicho elemento ya paso por la traspilación y se encuentra en calidad de producción. Por ese aspecto y solo por ese motivo, se permite la flexibilidad de las buenas prácticas en el uso de style dentro del archivo html.
 
 ## IC DINÁMICA- CIRCULAR- TARJETA
 
@@ -655,13 +654,13 @@ $border-opacity: 0.1;
 
 ## IC DINÁMICA CIRCULAR
 
-Se plantea como elemento carousel, determinando en pantalla la cantidad de items entregado por el diseñador en el boceto aprobado por PM. La manera de la entrega del mismo, son imagenes sueltas por medio de un zip, facilitadas por el diseñador. Para ser implementadas.
+Se plantea como elemento carousel, determinando en pantalla la cantidad de items entregado por el diseñador en el boceto aprobado por PM. Los archivos entregados por el diseñador para la implementación o armado, son imágenes individuales comprimidas en un archivo zip.
 
 La implementación según Webmaster tiene una normativa en su configuración
 
 > _Alerta_: la estructura debe cambiar en la brevedad por ser desarrollada con un carousel de caracteristicas arcaicas y tiene un mantenimiento nulo.
 
-Esta estructura contiene un cintillo que será comentado o descomentado dependiendo del requerimiento establecido y la aprobación de boceto de diseño y PM.
+Esta estructura contiene un cintillo que será comentado o descomentado dependiendo del requerimiento establecido.
 
 ## ¡ADVERTENCIA!
 
