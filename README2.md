@@ -208,17 +208,17 @@ Etiquetas HTML o atributos no permitidos:
 4. header
 5. navbar
 
-> _Nota:_ Cualquier etiqueta genérica o semántica produce un choque eminente con la estructura del cliente. Solo está permitido `<section></section>` , `<div></div>`; section como elemento mayor y jerarca. Div, como separador interno de bloques y padre de elemento directo.
+> _Nota:_ cualquier etiqueta genérica o semántica produce un choque eminente con la estructura del cliente. Solo está permitido `<section></section>` , `<div></div>`; **section** como elemento mayor y jerarca, **div** como separador interno de bloques y padre de elemento directo.
 
 ### Manera de nombrar class.
 
-Se determinó que los id serán establecidos en **UPPER_CASE** mientras que las clases serán en **lowerCamelCase** pero con la facultad de ser declarativos y preciso para su interpretación. Coincidiendo, su funcionalidad o rol dentro del layout.
+Se determinó que los id serán establecidos en **UPPER_CASE** mientras que las clases serán en **lowerCamelCase** pero con la facultad de ser declarativos y preciso para su interpretación, coincidiendo su funcionalidad o rol dentro del layout.
 
 ejemplo:
 
 1. parrafoQueEsElMarketplace
 2. wrapTextoComorSerParteMarketplace
-3. parrafoComoserParteMarketplace
+3. parrafoComoSerParteMarketplace
 
 > Código Limpio, determina que el uso de clases declarativas sin importar el largo del mismo potencia su actuar a la hora del mantenimiento del código y de su lectura incluso 6 meses posterior a su realización; facilitando su rápida compresión y ubicación de la misma. El nombramiento de las clases, es vital para su rápida localización y actuar en su modificación.
 
@@ -340,7 +340,7 @@ Se determina que **no se usará un procesador** producto de los elementos de act
 > La estructura y metodología del código, yace en la semántica utilizada y el orden jerárquico en la ejecución del mismo. Estableciendo en sí, la sincronía de la lectura y carga del mismo en el navegador.
 
 Por ende, es muy importante delimitar las fracciones y section, explicando de una manera corta y declarativa a que conlleva dicho bloque o que guarda dicho fragmento.
-La fragmentación de la estructura, es de vital importancia para la segmentación visual y el accionar de correcciones al momento de modificar o re construir section completas. Es decir, construir el layout por section como contenedores de padres supremos; dentro del mismo contenedor que fracciona la section superior dentro de la jerarquia.
+La fragmentación de la estructura, es de vital importancia para la segmentación visual y el accionar de correcciones al momento de modificar o re construir section completas. Es decir, construir el layout por section como contenedores de padres supremos; dentro del mismo contenedor que fracciona la section superior dentro de la jerarquía.
 
 ejemplo:
 
@@ -404,7 +404,7 @@ ejemplo:
 
 ### En el caso de CSS.
 
-De igual forma comentar el código en cascada en CSS, con el mismo orden jerárquico que se tiene en el html, es decir, ser consecuente entre el despliegue secuencial de html, que sea el mismo orden secuencial y consecuente en css. Lo mismo se aplica en JS.
+De igual forma comentar el código en cascada en CSS, con el mismo orden jerárquico que se tiene en el html, es decir, ser consecuente entre el despliegue secuencial de html, que sea el mismo orden en css. Lo mismo se aplica en JS.
 
 Dicho orden, determina visualmente una rápidez en conseguir los elementos que estén afectados por determinada etiqueta.
 
