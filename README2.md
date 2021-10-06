@@ -664,9 +664,9 @@ Esta estructura contiene un cintillo que será comentado o descomentado dependie
 
 ## ¡ADVERTENCIA!
 
-> Recordar que el primer elemento se debe especificar en su clase para la activación del css la clase **active**
+> Recordar que en el primer elemento se debe especificar en su clase para la activación del css la clase **active**.
 
-> Si en el caso contrario se quiere desactivar eventualidades de hover a un elemento o items particular. Se estipula en inline el atributo `pointer-events: none;` a la etiqueta señalada para que elimine el evento y quede desactivado.
+> Si en caso contrario se quiere desactivar eventualidades de hover a un elemento o items particular, se estipula en inline el atributo `pointer-events: none;` a la etiqueta señalada para que elimine el evento y quede desactivado.
 
 ### Considerar:
 
@@ -792,7 +792,7 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 
 ## IC DINÁMICA TARJETA
 
-> Se aplica la misma determinación de IC DINÁMICA CIRCULA. Solo cambia, el elemento visual de forma.
+> Se aplica la misma determinación de IC DINÁMICA CIRCULAR. Solo cambia, el elemento visual de forma.
 
 Recordar que el primer elemento se debe especificar en su clase para la activación del css la clase **active**
 
@@ -844,7 +844,7 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 
 ```
 
-3. CSS Contiene un 100% de with
+3. CSS Contiene un 100% de width
 
 ```
 #ic-container {
@@ -865,14 +865,14 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 
 ## ¡ADVERTENCIA!
 
-Dichas estructuras deben ser siempre revisadas y refactorizadas en el tiempo para su mantención, el uso de librerías o de factores de código ya construido y aplicado determina una fiel atención para una modernización o evaluación de sus componente sigan estando vigente.
+Dichas estructuras deben ser siempre revisadas y refactorizadas en el tiempo para su mantención, el uso de librerías o de factores de código ya construido y aplicado, determina una fiel atención para evaluar si sus componente sigan estando vigentes.
 
-> La recomendación, establecer siempre los ambitos nativo a medida que vayan siendo aceptados por los navegadores y puesto en practicas por las diferentes versiones de mejoras en la codificación.
+> La recomendación es establecer siempre los ámbitos nativos a medida que vayan siendo aceptados por los navegadores, y poner en práctica las versiones de mejoras en la codificación.
 
 # Reset de archivo para ser subidos al servidor.
 
 Se debe establecer en el caso de mailing:
-Armar en una carpeta con día seguida de un guión medio la actividad declarativa que fue enfatizada o señalada en la tarea, conjuntamente y dependiendo del caso, producto de multiples cambios la numeración del archivo para su diferenciación en el servidor. Recordando _los servidores tienen memoria cache por ende los archivos a ser subidos deben tener diferentes nombres si es de ser los mismos_ evidentemente, borrar los archivos que no aplican a posterior. Resguardando el orden mensual del mismo.
+Armar en una carpeta con el número correspondiente al día del mes, seguida de un guión medio, y luego nombrar la tarea de forma declarativa, conjuntamente y dependiendo del caso (producto de múltiples cambios), colocar el número de versión del archivo para su diferenciación en el servidor. Recordando _los servidores tienen memoria cache por ende los archivos a ser subidos deben tener diferentes nombres si es de ser los mismos_ evidentemente, borrar los archivos que no aplican a posterior. Resguardando el orden mensual del mismo.
 
 ejemplo:
 
@@ -880,6 +880,7 @@ ejemplo:
 1. 04-ultimosdias
 2. 05-soloxhoy
 3. 06-genericos
+3. 06-genericos2
 
 ```
 
@@ -887,13 +888,15 @@ En el caso de las landing:
 Se debe armar la carpeta que contenga todos los elementos del workflow, entendiendose la triada original (html/css/js) de todo navegador. Pero, la diferencia es que se debe generar una carpeta padre en la sección landing del servidor y dentro de ella subir las multiples pruebas que se realizan a la hora del armado y funcionalidad. De esa manera, se mantiene un orden entre elementos finales y pruebas internas.
 
 Caso de ic dinamica/ circulares y tarjeta:
-se plantea el mismo factor logico que los mailing pero con la condición de trasladarlo o subirlos en las carpetas madre de dicha descripción.
+Se plantea el mismo factor lógico que los mailing pero con la condición de trasladarlo o subirlos en las carpetas madre de dicha descripción.
 
 # Creación de biblioteca de front.
 
-**nati por favor revisar la redacción de este parrafo**
+Como equipo front, en busca de mejorar las propuestas al cliente y optimizar el tiempo de entrega, proponemos crear el desarrollo de una biblioteca con elementos atractivos para ser implementados en las tareas cotidianas.
 
-Se buscará de manera semanal el desarrollo de cada miembro de presentar bloques de código resueltos, y eventualidades del DOM con diferentes animaciones de elementos para tenerlos listos a desarrollo para su pronta escogencia al departamento de diseño. Dicha fabrica y posterior almacenamiento, en un codepen destinado para la agencia CABEZA, busca introducir patrones de resoluciones de problemas de interacción de usuario conjuntamente con JS para su aplicación y refactorización con rápidez, trayendo ventajas de tiempo y suministro de ideas potentes que enfaticen nuestro producto al cliente.
+Nuestra propuesta es crear un "codepen" de agencia CABEZA a modo de librería, en el que cada miembro vaya aportando de manera semanal o quincenal (dependiendo de la complejidad del desarrollo) algún elemento tal como: animación, contador, efecto, galería, etc., para que posteriormente puedan ser utilizados y reutilizados cuando sea necesario, recurriendo solo a su modificación estética y no estructural, optimizando el tiempo de desarrollo y mejorando el valor de nuestro trabajo.
+
+La idea inicial es que cada integrante del equipo proponga 2 elementos que le gustaría desarrollar, y que sean potencialmente útiles para nuestra biblioteca, y entre todos deliberar para determinar si son viables o no, hecho esto cada uno elegirá una tarea para realizar en un plazo determinado que inicialmente será una semana (puede variar dependiendo de la carga laboral y la complejidad de la tarea elegida). Llegada la fecha de finalización, cada uno deberá presentar al equipo su resultado y explicar su funcionamiento. Posterior a la revisión hecha en conjunto se subirá a la biblioteca.
 
 > _Nota_: el compromiso semanal y entrega el viernes de resoluciones de planteamiento para la integración y crecimiento de la biblioteca.
 
