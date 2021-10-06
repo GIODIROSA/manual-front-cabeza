@@ -934,6 +934,21 @@ Dichas estructuras deben ser siempre revisadas y refactorizadas en el tiempo par
 
 > La recomendación, establecer siempre los ambitos nativo a medida que vayan siendo aceptados por los navegadores y puesto en practicas por las diferentes versiones de mejoras en la codificación.
 
+# Reset de archivo para ser subidos al servidor.
+
+Se debe establecer en el caso de mailing:
+Armar en una carpeta con día seguida de un guión medio la actividad declarativa que fue enfatizada o señalada en la tarea, conjuntamente y dependiendo del caso, producto de multiples cambios la numeración del archivo para su diferenciación en el servidor. Recordando *los servidores tienen memoria cache por ende los archivos a ser subidos deben tener diferentes nombres si es de ser los mismos* evidentemente, borrar los archivos que no aplican a posterior. Resguardando el orden mensual del mismo. 
+
+En el caso de las landing:
+Se debe armar la carpeta que contenga todos los elementos del workflow, entendiendose la triada original (html/css/js) de todo navegador. Pero, la diferencia es que se debe generar una carpeta padre en la sección landing del servidor y dentro de ella subir las multiples pruebas que se realizan a la hora del armado y funcionalidad. De esa manera, se mantiene un orden entre elementos finales y pruebas internas.
+
+Caso de ic dinamica/ circulares y tarjeta:
+se plantea el mismo factor logico que los mailing pero con la condición de trasladarlo o subirlos en las carpetas madre de dicha descripción. 
+
 # Creación de biblioteca de front.
 
+**nati por favor revisar la redacción de este parrafo**
 
+Se buscará de manera semanal el desarrollo de cada miembro de presentar bloques de código resueltos, y eventualidades del DOM con diferentes animaciones de elementos para tenerlos listos a desarrollo para su pronta escogencia al departamento de diseño. Dicha fabrica y posterior almacenamiento, en un codepen destinado para la agencia CABEZA, busca introducir patrones de resoluciones de problemas de interacción de usuario conjuntamente con JS para su aplicación y refactorización con rápidez, trayendo ventajas de tiempo y suministro de ideas potentes que enfaticen nuestro producto al cliente.
+
+> _Nota_: el compromiso semanal y entrega el viernes de resoluciones de planteamiento para la integración y crecimiento de la biblioteca.
