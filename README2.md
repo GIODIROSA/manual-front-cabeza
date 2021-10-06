@@ -1,12 +1,12 @@
 # Manual de uso para Front en Agencia Cabeza
 
-###### documentación basada en las buenas prácticas de "Code Clean" (Robert C. Martin).
+###### Documentación basada en las buenas prácticas de "Code Clean" (Robert C. Martin).
 
 ###### > Ærlighed i små ting er ikke nogen lille ting --> "La honestidad por las cosas pequeñas no es algo menor"
 
-## Prologo
+## Prólogo
 
-Este manual de uso busca **_desarrollar normativas de apoyo en la toma de decisiones_** para la creación de infraestructura de software. Estableciendo metodologías y parámetros para estandarizar las creaciones y optimizar el mantenimiento de estas.
+Este manual de uso busca **_desarrollar normativas de apoyo en la toma de decisiones_** el desarrollo de infraestructura de software,estableciendo metodologías y parámetros para estandarizar las creaciones y optimizar el mantenimiento de estas.
 La integración de estos patrones por parte de cada desarrollador del equipo es fundamental para lograr un desarrollo sostenible.
 
 ---
@@ -22,7 +22,7 @@ Este manual contiene características orgánicas e híbridas, para que su relaci
 
 ### Desarrollo de Landing.
 
-`Las landing son estructuras visuales simples en su planteamiento` pero generan complejidad al desarrollarlas, la marca y el cliente buscan hacer un llamado de atención mediante una pieza original pensada en la conducta de un usuario en particular, recurriendo a una estructura compleja con interacciones diversas. Estableciendo así, verdaderas piezas gráficas de uso único, es decir, no es posible crear una maqueta base o prototipo para el desarrollo de las landing.
+`Las landing son estructuras visuales simples en su planteamiento` pero generan complejidad al desarrollarlas. La marca y el cliente buscan hacer un llamado de atención mediante una pieza original pensada en la conducta de un usuario en particular, recurriendo a una estructura compleja con interacciones diversas. Estableciendo así, verdaderas piezas gráficas de uso único, es decir, no es posible crear una maqueta base o prototipo para el desarrollo de las landing.
 
 Pero si se pueden establecer ciertas normas a seguir para optimizar su desarrollo y facilitar una potencial mantención.
 
@@ -33,7 +33,7 @@ Pero si se pueden establecer ciertas normas a seguir para optimizar su desarroll
 A) **Nomenclatura para nombrar archivos**
 
 ```
-<!-- numero del día, seguido de un guión medio, nombre declarativo de la actividad -->
+<!-- número del día, seguido de un guión medio, nombre declarativo de la actividad -->
 
 03-soloxhoy
 10-octubre
@@ -53,7 +53,7 @@ id="LANDING-EXAMPLE" (caso de html)
 
 C) **Norma lowerCamelCase para nombrar clases y id**
 
-para nombrar clases: `class`
+para nombrar clases `(class)`
 
 ```
 class="wrapTextoMarketplace"
@@ -111,9 +111,9 @@ _SCRIPT_
 
 # Implementación de media queries.
 
-principio filosófico para conllevar a la praxis. _Mobile first_
+Principio filosófico para conllevar a la praxis: _Mobile first_
 
-> ¿Qué hacer si el diseño de desktop se encuentra entregado en la tarea y no se ha desarrollado el mobile?
+> ¿Qué hacer si el diseño de la vista desktop es entregado antes que la verisón mobile?
 
 Bajo la tónica de cascada de CSS, se añaden en primera instancia los estilos para la vista mobile, y dentro de media queries los estilos para la vista desktop u otra que sea necesaria (tablet, etc).
 
