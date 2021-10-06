@@ -249,7 +249,7 @@ type="image/webp"
 
 > Nota: Establecer que la imagen tendrá un width: 100% en css tanto en desktop como en mobile, para lograr el ajuste adecuado de la caja. Tener en cuenta que la etiqueta _picture_ estipula un padding-bottom de 6 pixeles, dato a considerar a la hora de realizar grillas o flexibilizar un caja.
 
-### Uso de librería de native JS. carousel SPLITE
+### Uso de librería de native JS. carousel SPLIDE
 
 Revisar documentación de dicha librería para el máximo aprovechamiento de las facultades de la misma.
 
