@@ -11,8 +11,8 @@ La integración de estos patrones por parte de cada desarrollador del equipo es 
 
 ---
 
-El manual requiere estar en constante actualización y debe ser reformulado en la medida en que se presenten experiencias que determinen agregar/quitar/actualizar según avanza la tecnología en el diseño de software. 
-Este manual contiene características orgánicas e híbridas, para que su relación con la praxis sea lo más fiel a la realidad de productividad. 
+El manual requiere estar en constante actualización y debe ser reformulado en la medida en que se presenten experiencias que determinen agregar/quitar/actualizar según avanza la tecnología en el diseño de software.
+Este manual contiene características orgánicas e híbridas, para que su relación con la praxis sea lo más fiel a la realidad de productividad.
 
 ## Preceptos
 
@@ -109,25 +109,6 @@ _SCRIPT_
 
 ---
 
-
-elementos primitivos.
-
-1.  let
-2.  const
-3.  boolean
-4.  numero
-
-function (funciones)
-
-```
-function exampleFunction (name){
-    return
-}
-
-```
-
----
-
 # Implementación de media queries.
 
 principio filosófico para conllevar a la praxis. _Mobile first_
@@ -144,8 +125,7 @@ Dentro de los manuales de webmaster del cliente, se ha establecido que desde 768
 
 ## Syntax de media queries
 
-Usar bajo todo sentido dicha sentencia para todos los elementos a desarrollar de layout.
-Se podrá usar, una medida más pequeña particularmente sea el caso de uso que amerite el layout.
+Se establece `@media (min-width: 768px)` como syntax a usar. Estableciendo, min-width como quiebre para desktop y resoluciones superior. Los elementos fuera de esa sentencia se establecen como mobile.
 
 ```
 <!-- ejemplo de encapsulamiento de sentencia de media querie -->
@@ -201,11 +181,8 @@ CDN- HEAD- HTML:
 
 ```
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap"
-        rel="stylesheet"
-      />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet"/>
 ```
 
 Uso en style.css
@@ -217,12 +194,7 @@ Uso en style.css
 ### CDN autorizado para el uso de icono.
 
 ```
-  <link
-        rel="stylesheet"
-        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-        crossorigin="anonymous"
-  />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 ```
 
@@ -302,7 +274,7 @@ Instalación y linkeado de la librería.
 ```
 
 <link rel="stylesheet" href="./assets/css/style.css" />
-      <link rel="stylesheet" href="./assets/css/splide.min.css" />
+<link rel="stylesheet" href="./assets/css/splide.min.css" />
 
 ```
 
@@ -311,14 +283,14 @@ Instalación y linkeado de la librería.
 ```
 
   <!-- SPLIDE -->
+  <script src="./assets/js/splide.min.js"></script>
 
-      <script src="./assets/js/splide.min.js"></script>
-      <!-- MAIN JS -->
-      <script src="./assets/js/main.js"></script>
+  <!-- MAIN JS -->
+  <script src="./assets/js/main.js"></script>
 
 ```
 
-#### Estructura JS del carousel para su manipulación 
+#### Estructura JS del carousel para su manipulación
 
 ##### Se plantea con una instancia.
 
@@ -328,15 +300,16 @@ Instalación y linkeado de la librería.
 new Splide("#carouselMarcas", {
 perPage: 5,
 breakpoints: {
-768: {
-perPage: 2,
-},
+    768: {
+    perPage: 2,
+  },
 },
 
 rewind: true,
 type: "loop",
 autoplay: true,
 pagination: false,
+
 }).mount();
 
 ```
@@ -348,11 +321,11 @@ Se determina la especificidad del mismo.
 ```
 
 #carouselMarcas .splide\_\_arrow--prev {
-left: -3rem;
+    left: -3rem;
 }
 
 #carouselMarcas .splide\_\_arrow--next {
-right: -2rem;
+    right: -2rem;
 }
 
 ```
@@ -365,7 +338,7 @@ right: -2rem;
 
 Se determina que **no se usará un procesador** producto de los elementos de actualización del mismo y de la mantención del código en el tiempo. Establenciendo así, los elementos del lenguaje conocidos como la triada nativa: html/ css/ js. El planteamiento yace, para la unificación de estructura de codificación y establecer los similes entre los programadores para que sea entendible por cada miembro y reducir los tiempos de lectura y comprensión del código.
 
-1. Stylus 
+1. Stylus
 2. Sass
 3. Less
    ... entre otros.
@@ -385,17 +358,17 @@ ejemplo:
 
  <!-- CASO DE EXITO -->
 
-        <section id="wrapCasosExito">
-          <!-- TITULO HEADER -->
-          <div class="wrapTituloCasoExito">
+<section id="wrapCasosExito">
+<!-- TITULO HEADER -->
+     <div class="wrapTituloCasoExito">
             <h1 id="prueba" class="tituloCasoExito">
               conoce la experiencia de nuestros clientes
             </h1>
-          </div>
-          <!-- SUPERIOR -->
-          <div class="wrapSuperior">
-            <div class="unoSuperior">
-              <picture>
+    </div>
+ <!-- SUPERIOR -->
+    <div class="wrapSuperior">
+        <div class="unoSuperior">
+            <picture>
                 <!-- DESKTP -->
                 <source
                   media="(min-width: 700px)"
@@ -412,10 +385,10 @@ ejemplo:
                 <source type="image/webp" srcset="" alt="" />
                 <!-- MOBILE -->
                 <img src="./assets/img/mob/box1-mb.jpg" />
-              </picture>
-            </div>
-            <div class="dosSuperior">
-              <picture>
+            </picture>
+          </div>
+          <div class="dosSuperior">
+            <picture>
                 <!-- DESKTP -->
                 <source
                   media="(min-width: 700px)"
@@ -432,10 +405,10 @@ ejemplo:
                 <source type="image/webp" srcset="" alt="" />
                 <!-- MOBILE -->
                 <img src="./assets/img/mob/box2-mb.jpg" />
-              </picture>
-            </div>
+            </picture>
           </div>
-          <!-- INFERIOR -->
+      </div>
+<!-- INFERIOR -->
           <div class="wrapInferior">
             <div class="unoInferior">
               <picture>
@@ -478,8 +451,8 @@ ejemplo:
               </picture>
             </div>
           </div>
-        </section>
-        <!--FINAL CASO DE EXITO -->
+</section>
+<!--FINAL CASO DE EXITO -->
 
 ```
 
@@ -503,7 +476,8 @@ Dicho orden, determina visualmente una rápidez en conseguir los elementos que e
 ### Manipulación del DOM
 
 _ADVERTENCIA_: no usar variable de corte global como _var_ sino de alcance local.
-- const: cuando sea una constante el valor y no va a cambiar. 
+
+- const: cuando sea una constante el valor y no va a cambiar.
 - Let: si va ser un dato a guardar que tienen a mutar en el flujo del desarrollo de la aplicación.
 
 1.  Las variable _Let_ por convención, se le establece el signo $ al principio de dicho nombre de variable, como norma para determinar que dicha variable guarda elementos del DOM, distinta de otras variable dentro de la aplicación:
