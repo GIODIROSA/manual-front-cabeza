@@ -927,6 +927,7 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 }
 
 ```
+
 ## ¡ADVERTENCIA!
 
 Dichas estructuras deben ser siempre revisadas y refactorizadas en el tiempo para su mantención, el uso de librerías o de factores de código ya construido y aplicado determina una fiel atención para una modernización o evaluación de sus componente sigan estando vigente.
@@ -960,3 +961,12 @@ se plantea el mismo factor logico que los mailing pero con la condición de tras
 Se buscará de manera semanal el desarrollo de cada miembro de presentar bloques de código resueltos, y eventualidades del DOM con diferentes animaciones de elementos para tenerlos listos a desarrollo para su pronta escogencia al departamento de diseño. Dicha fabrica y posterior almacenamiento, en un codepen destinado para la agencia CABEZA, busca introducir patrones de resoluciones de problemas de interacción de usuario conjuntamente con JS para su aplicación y refactorización con rápidez, trayendo ventajas de tiempo y suministro de ideas potentes que enfaticen nuestro producto al cliente.
 
 > _Nota_: el compromiso semanal y entrega el viernes de resoluciones de planteamiento para la integración y crecimiento de la biblioteca.
+
+# Desarrollo del manual de front de la agencia CABEZA.
+
+## front end developer 2021
+
+1. Adrian Figueroa.
+2. Natalia Jimenez.
+3. Cynthia Medina.
+4. Giovanni Di Rosa.
