@@ -145,9 +145,8 @@ Se establece `@media (min-width: 768px)` como syntax a usar. Estableciendo, min-
   border-bottom: 1px solid #fff;
 }
 
-@media (min-width: 768px) {
-
 <!-- DESKTOP -->
+@media (min-width: 768px) {
 
   #landing-marketplace #wrapCarouselMarcas {
     display: block;
