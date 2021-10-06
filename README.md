@@ -92,7 +92,7 @@ B) **UPPER_CASE**
 ```
 const UNA_CONSTANTE (caso de JSE6)
 
-id="LANDING-EXAMPLE"
+id="LANDING-EXAMPLE" (caso de html)
 
 #LANDING-EXAMBLE (caso de style.css)
 
@@ -127,21 +127,21 @@ function exampleFunction (name){
 
 # Implementación de media queries.
 
-principio filosofico para conllevar a la praxis. Mobile first
+principio filosófico para conllevar a la praxis. _Mobile first_
 
 > ¿Qué hacer si el diseño de desktop se encuentra entregado en la tarea y no se ha desarrollado el mobile?
 
 Para efectos de rapidez y productividad, se establece el desarrollo de desktop dentro de la
-sentencia de media queries. Reservando su espacio y bajo la tonica de cascada de CSS. Se encuentre en las primeras lineas de código el mobile y encapsulado en su media querie, el desktop.
+sentencia de media queries. Reservando su espacio y bajo la tónica de cascada de CSS. Se encuentre en las primeras líneas de código el mobile y encapsulado en su media querie, el desktop.
 
 > ¿Qué medida de breackpoint se usa para el cambio de adaptabilidad de pantalla de mobile a desktop?
 
-Dentro de los manuales de webmaster del cliente, se ha establecido 768px > hacia adelante se plantea el layout de desktop < a esa medida se concentra mobile.
+Dentro de los manuales de webmaster del cliente, se ha establecido 768px mayor hacia adelante se plantea el layout de desktop menor a esa medida; se concentra mobile.
 
 ## Syntax de media queries
 
 Usar bajo todo sentido dicha sentencia para todos los elementos a desarrollar de layout.
-Se podrá usar una medida más pequeña particularmente sea el caso de uso que amerite el layout.
+Se podrá usar, una medida más pequeña particularmente sea el caso de uso que amerite el layout.
 
 ```
 <!-- ejemplo de encapsulamiento de sentencia de media querie -->
@@ -232,23 +232,23 @@ etiqueta HTML o atributo:
 4. header
 5. navbar
 
-> _Nota:_ cualquier etiqueta generica o semántica produce un choque eminente en la estructura del cliente. Solo está permitido `<section></section>` , `<div></div>`; section como elemento mayor y jerarca. div como separador interno de bloques y padre de elemento directo.
+> _Nota:_ cualquier etiqueta genérica o semántica produce un choque eminente en la estructura del cliente. Solo está permitido `<section></section>` , `<div></div>`; section como elemento mayor y jerarca. Div, como separador interno de bloques y padre de elemento directo.
 
 ### Manera de nombrar class.
 
-Se determinó que los id serán establecidos en **UPPER_CASE** mientras que las clases serán en **lowerCamelCase** pero con la facultad de ser declarativos y preciso para su interpretación. Coincidiendo con su funcionalidad o rol dentro del layout.
+Se determinó que los id serán establecidos en **UPPER_CASE** mientras que las clases serán en **lowerCamelCase** pero con la facultad de ser declarativos y preciso para su interpretación. Coincidiendo, su funcionalidad o rol dentro del layout.
 
 ejemplo:
 
-1. parrafoQueEsElMarktplace
+1. parrafoQueEsElMarketplace
 2. wrapTextoComorSerParteMarketplace
 3. parrafoComoserParteMarketplace
 
-> Código Limpio, determina que el uso de clases declarativas sin importar el largo del mismo potencia su actuar a la hora del mantenimiento del código y de su lectura 6 meses posterior a su realización facilitando su rápida compresión y ubicación de la misma. El nombramiento de las clases, es vital para su rapida localización y actuar en su modificación.
+> Código Limpio, determina que el uso de clases declarativas sin importar el largo del mismo potencia su actuar a la hora del mantenimiento del código y de su lectura 6 meses posterior a su realización; facilitando su rápida compresión y ubicación de la misma. El nombramiento de las clases, es vital para su rápida localización y actuar en su modificación.
 
 ### Etiquetas HTML excepcional
 
-###### uso de imagenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
+###### uso de imágenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
 
 **ADVERTENCIA**: atributo importante
 
@@ -281,9 +281,11 @@ type="image/webp"
 
 ```
 
+> Nota: estipular el width: 100% de la imagen en el css, para el caso de desktop y mobile. Para el ajuste adecuado de la caja. Tener en cuenta que la etiqueta _picture_ estipula un padding-bottom de 6 pixeles. Dato a considerar a la hora de realización de grillas o flexibilizar un caja.
+
 ### Uso de librería de native JS. carousel SPLITE
 
-revisar documentación de dicha librería
+revisar documentación de dicha librería para el máximo aprovechamiento de las facultades del mismo.
 
 <https://splidejs.com/>
 
@@ -316,10 +318,9 @@ instalación y linkeado de la librería.
 
 ##### Se plantea con una instancia.
 
-> En el html se establece el contenedor _DIV_ que va a contener el id para la activación del carousel
+> En el html se establece el contenedor _DIV_ que va a contener el id para la activación del carousel.
 
 ```
-
 new Splide("#carouselMarcas", {
 perPage: 5,
 breakpoints: {
@@ -356,13 +357,14 @@ right: -2rem;
 
 ##### Uso de procesador.
 
-> El énfasis del desarrollo, se establece en el crecimiento como profesional en el dominio ontologico y purista de los elementos que contituyen el origen de cada tecnología. Producto de las diferentes adversidades de la estructura de cliente. Conlleva, a reformarnos y volver a las raices ontologicas del desarrollo. Manejar la triada nos establece la comunión entre los desarrolladores y la unificación del producto a entregar. Ayudando con rapidez y eficacia la especificidad de los elementos al momento del montaje en el marco del cliente y su plataforma.
+> El énfasis del desarrollo, se establece en el crecimiento como profesional en el dominio ontológico y purista de los elementos que constituyen, el origen de cada tecnología. Producto de las diferentes adversidades de la estructura del cliente. Se conlleva, a reformarnos y volver a las raíces iniciales del desarrollo. Manejar la triada, nos foratalece la comunión entre los desarrolladores y la unificación del producto a entregar. Ayudando con rapidez y eficacia; la especificidad de los elementos al momento del montaje en el marco del cliente y su plataforma.
 
 Se determina que **no se usará un procesador** producto de los elementos de actualización del mismo y de la mantención del código en el tiempo. Establenciendo así, los elementos del lenguaje conocidos como la triada nativa: html/ css/ js. El planteamiento yace, para la unificación de estructura de codificación y establecer los similes entre los programadores para que sea entendible por cada miembro y reducir los tiempos de lectura y comprensión del código.
 
 1. Sass
 2. Less
 3. Stylus
+   ... entre otros.
 
 # SEMÁNTICA
 
@@ -479,24 +481,24 @@ ejemplo:
 
 ### En el caso de CSS.
 
-De igual forma comentar el código en cascada CSS con el mismo orden jerarquico que se tiene en el html. Es decir, ser consecuente entre el despliegue secuencia de html sea el mismo orden secuencial y consecuente en css. Lo mismo se aplica en JS.
+De igual forma comentar el código en cascada CSS con el mismo orden jerárquico que se tiene en el html. Es decir, ser consecuente entre el despliegue secuencial de html, sea el mismo orden secuencial y consecuente en css. Lo mismo, se aplica en JS.
 
-Dicho orden, determina visualmente una rapidez de conseguir el elemento que este afectando o este determinado por medio de etiquetas.
+Dicho orden, determina visualmente una rápidez en conseguir los elementos que esten afectando o este determinado por medio de etiquetas.
 
-###### uso de imagenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
+###### uso de imágenes para la flexibilidad y la adaptabilidad en las distintas resoluciones.
 
 ### Implementación de orden de código. (caso JS)
 
-1.  Importación de módulos
-2.  Declaración de variables
-3.  Declaración de funciones
-4.  Ejecución de código
+1.  Importación de módulos.
+2.  Declaración de variables.
+3.  Declaración de funciones.
+4.  Ejecución de código.
 
 ---
 
 ### Manipulación del DOM
 
-_ADVERTENCIA_: no usar variable de corte global como _var_ sino la convención local,
+_ADVERTENCIA_: no usar variable de corte global como _var_ sino de alcance local,
 const: cuando sea una constante el valor y no va a cambiar. Let: si va ser un dato a guardar que tienen a mutar en el flujo del desarrollo de la aplicación.
 
 1.  Las variable _Let_ por convención, se le establece el signo $ al principio de dicho nombre de variable, como norma para determinar que dicha variable guarda elementos del DOM, distinta de otras variable dentro de la aplicación:
@@ -527,20 +529,20 @@ const VALOR-PI= 3,1416;
 
 ###### desarrollo rutinario de la celula de ripley.com
 
-Los mailing son estructuras desarrolladas en bases de plantillas traspiladas en webpack para tener una estructura mas rápida. Estableciendo así, un objeto JS que inyecta imagen y url absolutas al html. Enviando a producción y proyectandose el armado secuencial del mailing.
+Los mailing, son estructuras desarrolladas en bases de plantillas traspiladas en webpack para tener una estructura más rápida. Estableciendo así, un objeto JS que inyecta imagen y url absolutas al html. Enviando a producción y proyectandose el armado secuencial del mailing.
 Aspecto a resaltar **_debe ser enviado a testeo como elemento fundamental de entrega al proveedor_**
 
 > PRIMERA PARTE
 
-Los mailing, como lo descrito anteriormente, se construyen por medio de un JS llamado items, que por medio de un array de objeto, inyecta la imagen previamente cortada y una URl.
+Los mailing, como lo descrito anteriormente, se construyen por medio de un JS llamado items, que por medio de un array de objeto, inyecta la imagen previamente cortada y una URL.
 
-> _ADVERTENCIA_: los link de objetos que no han sido señalados ni instruidos desde la tarea, siempre deben llevar al _home_, en dado caso, no dan una instrucción distinta. Por _default_ siempre al home.
+> _ADVERTENCIA_: los link de objetos que no han sido señalados ni instruidos desde la tarea, siempre deben llevar al _home_, en dado caso, no den una instrucción distinta. Por _default_ siempre al home.
 
-> Existen dos elementos un objeto y un array, sirven dependendiendo de la propuesta gráfica.
+> Existen dos elementos: un objeto y un array, sirven dependendiendo de la propuesta gráfica.
 
 #### Objecto Simple
 
-Es usado cuando hay una sola section cortada en la maqueta y te conduce a una sola url.
+Es usado cuando hay una sola section cortada en la maqueta y te conduce a una sola URL.
 Es decir, una imagen, una URL.
 
 ```
@@ -554,7 +556,7 @@ link: "https://simple.ripley.cl/",
 
 #### Array dual o bloque
 
-Es usado cuando en una sola section existe dos imagenes antagonicas y a su vez las URL tambien tiene dicha caracteristica contraria.
+Es usado cuando en una sola section existe dos imágenes antagónicas y a su vez, las URL también tiene dicha característica contraria.
 
 ```
 
@@ -578,10 +580,9 @@ link: "https://simple.ripley.cl/supermercado/despensa",
 Caso excepcional y rara vez sucede.
 _ADVERTENCIA_ solicitar al diseñador que esta section sea cortada de manera equitativa en tres partes para el armado.
 
-> Verificar en el html final en producción que cada width contenga el 33%. Esto se evidencia debido a la división del 100% de la imagen en tres partes iguales.
+> Verificar, el html en producción, cada width contenga el 33%. Esto, sea evidencia debido a la división del 100% de la imagen en tres partes iguales.
 
 ```
-
 {
 block: [
 {
