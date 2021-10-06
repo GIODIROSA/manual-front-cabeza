@@ -40,7 +40,7 @@ A) **Nomenclatura para nombrar archivos**
 
 ```
 
-B) **Norma UPPER_CASE para nombrar id y constante en varible JS**
+B) **Norma UPPER_CASE para nombrar id y constante en variable JS**
 
 ```
 const UNA_CONSTANTE (caso de JSE6)
