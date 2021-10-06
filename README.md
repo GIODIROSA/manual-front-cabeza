@@ -252,7 +252,7 @@ ejemplo:
 
 **ADVERTENCIA**: atributo importante
 
-````
+```
 
 type="image/webp"
 
@@ -935,4 +935,5 @@ Dichas estructuras deben ser siempre revisadas y refactorizadas en el tiempo par
 > La recomendación, establecer siempre los ambitos nativo a medida que vayan siendo aceptados por los navegadores y puesto en practicas por las diferentes versiones de mejoras en la codificación.
 
 # Creación de biblioteca de front.
-````
+
+
