@@ -668,7 +668,7 @@ $border-opacity: 0.1;
 
 Ejemplo de IC DINÁMICA:
 
-![IC DINÁMICA](./assets/img/muestra-ic-dinamica.jpg){width=100% height=100px}
+![IC DINÁMICA](./assets/img/muestra-ic-dinamica.jpg)
 
 ## IC DINÁMICA CIRCULAR
 
@@ -818,7 +818,7 @@ Si en el caso contrario se quiere desactivar eventualidades de hover a un elemen
 
 > Se presenta las mismas características semánticas de armado de la ic dinámica tarjeta.
 
-![IC DINÁMICA](./assets/img/muestra-ic-tarjeta.jpg){width=100% height=100px}
+![IC DINÁMICA](./assets/img/muestra-ic-tarjeta.jpg)
 
 1. HTML
 
