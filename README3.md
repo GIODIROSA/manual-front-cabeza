@@ -496,13 +496,11 @@ Es usado cuando hay una sola section cortada en la maqueta y te conduce a una so
 
 Es usado cuando en una sola section existe dos imágenes antagónicas, cada una con una URL determinada.
 
-```
-
 Ejemplo de bloque dual en construcción de mailing:
 
-![BLOQUE DUO](./assets/img/muestra-bloque-duo.jpg)
+![IC BLOQUE DUAL](./assets/img/muestra-bloque-duo.jpg)
 
-
+```
 {
 block: [
     {
