@@ -668,7 +668,7 @@ $border-opacity: 0.1;
 
 Ejemplo de IC DINÁMICA:
 
-![IC DINÁMICA](muestra-ic-dinamica.jpg){width=100% height=100px}
+![IC DINÁMICA](./assets/img/muestra-ic-dinamica.jpg){width=100% height=100px}
 
 ## IC DINÁMICA CIRCULAR
 
