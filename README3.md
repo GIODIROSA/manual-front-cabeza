@@ -124,6 +124,8 @@ Cuando las condiciones no son estas, es decir, tenemos el diseño de la vista de
 
 Dentro de los manuales de webmaster del cliente, se ha establecido que desde 768px hacia arriba se plantea el layout de desktop, desde 768px hacia abajo se concentra mobile.
 
+> Se recomienda el uso de un solo media queries, estableciendo la sentencia en desktop. Si en dado caso, una section de particularidades requiere de un media querie aplicarlo con sentido de praxis y ajuste. **No es recomendable usar un media queries por cada elemento o ajuste entre resoluciones**
+
 ## Syntax de media queries
 
 Se establece `@media (min-width: 768px)` como syntax a usar. Estableciendo, min-width como quiebre para desktop y resoluciones superiores. Los elementos fuera de esa sentencia se establecen como mobile.
@@ -219,6 +221,14 @@ ejemplo:
 1. parrafoQueEsElMarketplace
 2. wrapTextoComorSerParteMarketplace
 3. parrafoComoSerParteMarketplace
+
+**RECOMENDACIÓN**: sE recomienda el uso de la metodología BEM. Como canon para establecer un sentido lógio y declarativo del nombramiento de clases.
+
+ejemplo:
+
+1. author
+2. author_info / author--info
+3. authos_content /author--content
 
 > Código Limpio, determina que el uso de clases declarativas sin importar el largo del mismo potencia su actuar a la hora del mantenimiento del código y de su lectura incluso 6 meses posterior a su realización; facilitando su rápida compresión y ubicación de la misma. El nombramiento de las clases, es vital para su rápida localización y actuar en su modificación.
 
@@ -326,12 +336,16 @@ Se determina la especificidad del mismo.
 
 > El énfasis del desarrollo, se establece en el crecimiento como profesional en el dominio ontológico y purista de los elementos que constituyen el origen de cada tecnología. Producto de las diferentes adversidades de la estructura del cliente. Se conlleva, a reformarnos y volver a las raíces iniciales del desarrollo. Manejar la triada, nos foratalece la comunión entre los desarrolladores y la unificación del producto a entregar. Ayudando con rapidez y eficacia; la especificidad de los elementos al momento del montaje en el marco del cliente y su plataforma.
 
-Se determina que **no se usará un procesador** producto de los elementos de actualización del mismo y de la mantención del código en el tiempo. Establenciendo así, los elementos del lenguaje conocidos como la triada nativa: html/ css/ js. El planteamiento yace, para la unificación de estructura de codificación y establecer los similes entre los programadores para que sea entendible por cada miembro y reducir los tiempos de lectura y comprensión del código.
+Se determina que **no es recomendable un procesador** producto de los elementos de actualización del mismo y de la mantención del código en el tiempo. Establenciendo así, los elementos del lenguaje conocidos como la triada nativa: html/ css/ js. El planteamiento yace, para la unificación de estructura de codificación y establecer los similes entre los programadores para que sea entendible por cada miembro y reducir los tiempos de lectura y comprensión del código.
 
 1. Stylus
 2. Sass
 3. Less
    ... entre otros.
+
+### Uso de EM y REM vs Pixeles
+
+Se recomienda el uso de em y rem como medidas relativas y no absolutas como los pixeles, ayudando al calculo del navegador para su equivalencia entre resolución. Logrando así, un ajuste mas adecuado a la hora de maquetar.
 
 # SEMÁNTICA
 
@@ -505,7 +519,7 @@ Ejemplo visual de bloque duales. insertar imagen de apoyo.
 Caso excepcional y que rara vez sucede.
 _ADVERTENCIA_ solicitar al diseñador que esta section sea cortada de manera equitativa en tres partes para el armado.
 
-> Verificar que en el html en producción cada width sea de 33%. Esto, se evidencia debido a la división del 100% de la imagen en tres partes iguales.
+> Verificar que en el html en producción cada width sea de 33.3%. Esto, se evidencia debido a la división del 100% de la imagen en tres partes iguales.
 
 ```
 {
@@ -651,6 +665,10 @@ $border-opacity: 0.1;
 #### Hacer _build_ ejecuta la construcción del array de objeto.
 
 > Entregando en producción diferentes html que posterior seran ensamblados por Webmaster en Ripley.com
+
+Ejemplo de IC DINÁMICA:
+
+![IC DINÁMICA](./assets/img/muestra-ic-dinamica.jpg){width=100% height=100px}
 
 ## IC DINÁMICA CIRCULAR
 
