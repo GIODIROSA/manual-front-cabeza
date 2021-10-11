@@ -686,6 +686,8 @@ Esta estructura contiene un cintillo que será comentado o descomentado dependie
 
 > Si en caso contrario se quiere desactivar eventualidades de hover a un elemento o items particular, se estipula en inline el atributo `pointer-events: none;` a la etiqueta señalada para que elimine el evento y quede desactivado.
 
+Ejemplo de IC Cicular:
+
 ![IC CIRCULAR](./assets/img/muestra-ic-circular.jpg)
 
 ### Considerar:
@@ -819,6 +821,8 @@ Recordar que el primer elemento se debe especificar en su clase para la activaci
 Si en el caso contrario se quiere desactivar eventualidades de hover a un elemento o items particular. Se estipula en inline (html) el atributo `pointer-events: none;` a la etiqueta señalada para que elimine el evento y quede desactivado.
 
 > Se presenta las mismas características semánticas de armado de la ic dinámica tarjeta.
+
+Ejemplo de IC tarjetas:
 
 ![IC TARJETA](./assets/img/muestra-ic-tarjeta.jpg)
 
