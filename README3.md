@@ -496,10 +496,6 @@ Es usado cuando hay una sola section cortada en la maqueta y te conduce a una so
 
 Es usado cuando en una sola section existe dos imágenes antagónicas, cada una con una URL determinada.
 
-Ejemplo de bloque dual en construcción de mailing:
-
-![IC BLOQUE DUAL](./assets/img/muestra-bloque-duo.jpg)
-
 ```
 {
 block: [
@@ -516,7 +512,9 @@ block: [
 
 ```
 
-Ejemplo visual de bloque duales. insertar imagen de apoyo.
+Ejemplo de bloque dual en construcción de mailing:
+
+![MAILING BLOQUE DUAL](./assets/img/muestra-bloque-duo.jpg)
 
 #### Array triple o bloque
 
@@ -524,6 +522,10 @@ Caso excepcional y que rara vez sucede.
 _ADVERTENCIA_ solicitar al diseñador que esta section sea cortada de manera equitativa en tres partes para el armado.
 
 > Verificar que en el html en producción cada width sea de 33.3%. Esto, se evidencia debido a la división del 100% de la imagen en tres partes iguales.
+
+Ejemplo visual de bloque triple.
+
+![MAILING BLOQUE TRIPLE](./assets/img/muestra-bloque-triple.jpg)
 
 ```
 {
