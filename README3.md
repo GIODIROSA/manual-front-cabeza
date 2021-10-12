@@ -202,7 +202,7 @@ Uso en style.css
 
 **ADVERTENCIA**: Existen etiquetas HTML que no deben ser usadas, ya que causan un "choque" contra la estructura del cliente.
 
-Etiquetas HTML o atributos no recomendados:
+Etiquetas HTML o atributos que no se recomiendan:
 
 1. footer
 2. class container
