@@ -202,7 +202,7 @@ Uso en style.css
 
 **ADVERTENCIA**: Existen etiquetas HTML que no deben ser usadas, ya que causan un "choque" contra la estructura del cliente.
 
-Etiquetas HTML o atributos no permitidos:
+Etiquetas HTML o atributos no recomendados:
 
 1. footer
 2. class container
@@ -222,7 +222,7 @@ ejemplo:
 2. wrapTextoComorSerParteMarketplace
 3. parrafoComoSerParteMarketplace
 
-**RECOMENDACIÓN**: sE recomienda el uso de la metodología BEM. Como canon para establecer un sentido lógio y declarativo del nombramiento de clases.
+**RECOMENDACIÓN**: sE recomienda el uso de la metodología BEM. Como canon para establecer un sentido lógico y declarativo del nombramiento de clases.
 
 ejemplo:
 
