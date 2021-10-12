@@ -40,6 +40,8 @@ A) **Nomenclatura para nombrar archivos**
 
 ```
 
+> - **Tanto CSS como JS deben ir sin caracteres extraños** o espacios. Preferir (guión medio) en vez de (guión bajo).
+
 B) **Norma UPPER_CASE para nombrar id y constante en variable JS**
 
 ```
@@ -252,12 +254,16 @@ type="image/webp"
     <!-- DESKTP -->
         <source type="image/webp" srcset="" alt="" />
     <!-- MOBILE -->
-        <img src="./assets/img/mob/box4-mb.jpg" />
+        <img loading="lazy" src="./assets/img/mob/box4-mb.jpg" />
 </picture>
 
 ```
 
+- Las imágenes deben **utilizar** lazy load.
+
 > Nota: Establecer que la imagen tendrá un width: 100% en css tanto en desktop como en mobile, para lograr el ajuste adecuado de la caja. Tener en cuenta que la etiqueta _picture_ estipula un padding-bottom de 6 pixeles, dato a considerar a la hora de realizar grillas o flexibilizar un caja.
+
+**Recomendación**: Imágenes deben tener **un nombre de archivo y Alt Text alineado con el contenidode la página.** El nombre del archivo usado es relevante pues le ayuda al crawler a identificar el contenido de dicha imagen. Sigue las mismas reglas que un título, debe ser relevante, corto y conciso. Al igual que con los URL, **para las separaciones de palabras deben hacerse usando guión medio (-)**.
 
 ### Uso de librería de native JS. carousel SPLIDE
 
@@ -461,6 +467,16 @@ _ADVERTENCIA_: no usar variable de corte global como _var_ sino de alcance local
 const VALOR-PI= 3,1416;
 
 ```
+
+# Recomendaciones generales:
+
+1. **Etiquetar el contenido correctamente.** Si es una lista etiquetarlo como lista, si es un parrafo, como parrafo etc.
+
+2. **Existe "font-weight** no es necesario una clase "bold". **Existe <hr>** no es necesario una clase "separador" o similares.
+
+3. **Las imágenes deben llevar alt= ""** con la descripción de la imagen. Además todas **las imásgenes deben cerrarse al final** <img src=" alt="/>.
+
+4. **Font-family siempre van con la llamada a sans-serif o serif** porque no todos los navegadores o computadores tienen todas las tipografías, incluso si es Arial.
 
 ---
 
@@ -709,7 +725,7 @@ Ejemplo de IC Cicular:
         media="(min-width:1000px)"
         srcset="assets/img/Cintillo-desk.jpg"
       />
-      <img src="assets/img/Cintillo-mob.jpg" alt="cintillo infantil" />
+      <img loading="lazy" src="assets/img/Cintillo-mob.jpg" alt="cintillo infantil" />
     </picture>
   </a>
 <!--FIN -->
