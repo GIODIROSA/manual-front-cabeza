@@ -336,7 +336,7 @@ Se determina la especificidad del mismo.
 
 ```
 
-## No permitido
+## No recomendado
 
 ##### Uso de procesador.
 
