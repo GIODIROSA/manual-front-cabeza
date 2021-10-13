@@ -64,7 +64,7 @@ class="wrapTextoMarketplace"
 
 2. Etiquetas **MADRES**:
 
-ejemplo: etiquetas ** envolventes (wrap) ** otorgadas por Ripley para el reconocimiento en la plataforma.
+ejemplo: etiquetas ** envolventes (wrap) ** otorgadas por Ripley.com para el reconocimiento en la plataforma.
 
 _HEAD_
 
@@ -164,7 +164,7 @@ Se establece `@media (min-width: 768px)` como syntax a usar. Estableciendo, min-
 
 ```
 
-### Configuración de layout, estipulado por Ripley.
+### Configuración de layout, estipulado por Ripley.com.
 
 Bloque de código CSS que enmarca cada layout que se desarrolle.
 
@@ -179,7 +179,7 @@ Bloque de código CSS que enmarca cada layout que se desarrolle.
 
 > _Nota_: el total de width y el marco que encierra al layout de la landing es de 1140px, pero hay elementos internos que van a requerir de un `max-width: 1000px; / max-width: 900px` todo va a depender del diseño de la maqueta.
 
-### Norma de cliente Ripley para el uso de la tipografía general.
+### Norma de cliente Ripley.com para el uso de la tipografía general.
 
 CDN- HEAD- HTML:
 
@@ -482,7 +482,7 @@ const VALOR-PI= 3,1416;
 
 ## MAILING
 
-###### desarrollo rutinario de la celula de ripley.com
+###### desarrollo rutinario de la celula de Ripley.com.com
 
 Los mailing, son estructuras desarrolladas utilizando plantillas bases traspiladas en webpack para tener una estructura más rápida. Estableciendo así, un objeto JS con el que se le inyecta imagen y url absolutas al html. Luego se envía a producción, proyectándose el armado secuencial del mailing.
 Aspecto a resaltar **_debe ser enviado a testeo como elemento fundamental de entrega al proveedor._**
@@ -503,7 +503,7 @@ Es usado cuando hay una sola section cortada en la maqueta y te conduce a una so
 
 {
   photo: require("../img/images/03-blandosgenericos_01.jpg"),
-  link: "https://simple.ripley.cl/",
+  link: "https://simple.Ripley.com.cl/",
 },
 
 ```
@@ -517,11 +517,11 @@ Es usado cuando en una sola section existe dos imágenes antagónicas, cada una 
 block: [
     {
       photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
-      link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
+      link: "https://simple.Ripley.com.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
     },
     {
       photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
-      link: "https://simple.ripley.cl/supermercado/despensa",
+      link: "https://simple.Ripley.com.cl/supermercado/despensa",
     },
   ],
 },
@@ -548,15 +548,15 @@ Ejemplo visual de bloque triple.
 block: [
     {
       photo: require("../img/images/04-ultimosdias2-vertical6_01.jpg"),
-      link: "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
+      link: "https://simple.Ripley.com.cl/otras-categorias/servicios-y-gift-card/tiempo-libre",
     },
     {
       photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
-      link: "https://simple.ripley.cl/supermercado/despensa",
+      link: "https://simple.Ripley.com.cl/supermercado/despensa",
     },
     {
       photo: require("../img/images/04-ultimosdias2-vertical6_02.jpg"),
-      link: "https://simple.ripley.cl/supermercado/despensa",
+      link: "https://simple.Ripley.com.cl/supermercado/despensa",
     },
   ],
 },
@@ -565,7 +565,7 @@ block: [
 
 Ejemplo visual de bloque triple. insertar imagen de apoyo.
 
-#### Banner promocional de banco ripley o evento temporal
+#### Banner promocional de banco Ripley.com o evento temporal
 
 Este banner, se localiza en el footer del mailing con una URL asociada. Tienen la características de ser modificado cada mes, y algunos se añaden temporalmente por algún evento en particular.
 
@@ -573,7 +573,7 @@ Este banner, se localiza en el footer del mailing con una URL asociada. Tienen l
 
 {
   photo: require("../img/banners/cyber2.jpg"),
-  link: "https://www.bancoripley.cl/solicitar-tarjeta-online?utm_source=ripley-com&utm_medium=mail_footer&utm_campaign=captacion_jun21",
+  link: "https://www.bancoRipley.com.cl/solicitar-tarjeta-online?utm_source=Ripley.com-com&utm_medium=mail_footer&utm_campaign=captacion_jun21",
 },
 
 ```
@@ -589,7 +589,7 @@ para enfatizar el orden visual y la separación entre parrafos.
 
 <td align="justify">
     <span style="text-align:justify;font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#575757; margin:0; padding:0; font-weight:normal;">
-          Precios disponibles en Ripley.com hasta el 06 de octubre de 2021 o hasta agotar stock. Precios Internet publicados incluyen descuento adicional. Productos sujetos a disponibilidad de stock al momento de la compra. No acumulable con otras promociones. Despacho de producto se realizará una vez confirmada la compra. *Dcto. ya aplicado a precio Internet | **Sólo productos seleccionados. <br><br>Contratación de Tarjeta de Crédito Ripley Mastercard sujeta a evaluación de antecedentes del cliente. Promoción válida para personas que contraten su Tarjeta de Crédito Ripley Mastercard entre el 27/09/2021 y 06/10/2021. Cupón de descuento de $20.000 será cargado al día hábil siguiente a la contratación en la app Banco Ripley, utilizable hasta el 31/11/2021 pagando con Tarjeta Ripley o Tarjeta Ripley Mastercard en compras sobre $40.000. Exclusivo para captaciones online. No es acumulable con otros cupones y no aplica en despacho ni compras en Mercado Ripley. Entrega de cupón, descuentos en Ripley son de responsabilidad de Comercial Eccsa S.A. Oportunidades exclusivas en tiendas Ripley y <a href="http://ripley.com/">ripley.com</a> y la administración del programa Ripley Puntos Go y la entrega de sus beneficios son de responsabilidad de Comercial Eccsa S.A. Términos y condiciones del programa Ripley Puntos Go en www.ripleypuntosgo.com. Restaurantes adheridos y condiciones del programa Restofans disponibles en pestaña “Beneficios / Restofans” de bancoripley.com. Tarjetas Ripley son emitidas por CAR S.A., sociedad de apoyo al giro y filial de Banco Ripley. Infórmese sobre la garantía estatal de los depósitos en su banco o en <a href="www.cmfchile.cl">www.cmfchile.cl</a>  <br><br>  Acumulan doble Ripley Puntos Go las compras en tiendas Ripley y Ripley.com realizadas con Tarjeta Ripley MasterCard y Debito Banco Ripley entre el 01/10/2021 y el 06/10/2021. Máximo 5.000 Ripley Puntos Go extra por cliente. Participan en la promoción sólo los clientes inscritos. Tope de 10.000 inscritos por campaña. Abono de Ripley Puntos Go promocionales se realizará durante el mes siguiente al pago. La administración del Programa Ripley Puntos Go y entrega de sus beneficios es de exclusiva responsabilidad de Comercial ECCSA S.A. Términos y condiciones del Programa en www.ripleypuntosgo.com. Tarjetas de Crédito Ripley son emitidas por CAR S.A., sociedad de apoyo al giro y filial de Banco Ripley. Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl.
+          Precios disponibles en Ripley.com.com hasta el 06 de octubre de 2021 o hasta agotar stock. Precios Internet publicados incluyen descuento adicional. Productos sujetos a disponibilidad de stock al momento de la compra. No acumulable con otras promociones. Despacho de producto se realizará una vez confirmada la compra. *Dcto. ya aplicado a precio Internet | **Sólo productos seleccionados. <br><br>Contratación de Tarjeta de Crédito Ripley.com Mastercard sujeta a evaluación de antecedentes del cliente. Promoción válida para personas que contraten su Tarjeta de Crédito Ripley.com Mastercard entre el 27/09/2021 y 06/10/2021. Cupón de descuento de $20.000 será cargado al día hábil siguiente a la contratación en la app Banco Ripley.com, utilizable hasta el 31/11/2021 pagando con Tarjeta Ripley.com o Tarjeta Ripley.com Mastercard en compras sobre $40.000. Exclusivo para captaciones online. No es acumulable con otros cupones y no aplica en despacho ni compras en Mercado Ripley.com. Entrega de cupón, descuentos en Ripley.com son de responsabilidad de Comercial Eccsa S.A. Oportunidades exclusivas en tiendas Ripley.com y <a href="http://Ripley.com/">Ripley.com</a> y la administración del programa Ripley.com Puntos Go y la entrega de sus beneficios son de responsabilidad de Comercial Eccsa S.A. Términos y condiciones del programa Ripley.com Puntos Go en www.Ripley.compuntosgo.com. Restaurantes adheridos y condiciones del programa Restofans disponibles en pestaña “Beneficios / Restofans” de bancoRipley.com.com. Tarjetas Ripley.com son emitidas por CAR S.A., sociedad de apoyo al giro y filial de Banco Ripley.com. Infórmese sobre la garantía estatal de los depósitos en su banco o en <a href="www.cmfchile.cl">www.cmfchile.cl</a>  <br><br>  Acumulan doble Ripley.com Puntos Go las compras en tiendas Ripley.com y Ripley.com.com realizadas con Tarjeta Ripley.com MasterCard y Debito Banco Ripley.com entre el 01/10/2021 y el 06/10/2021. Máximo 5.000 Ripley.com Puntos Go extra por cliente. Participan en la promoción sólo los clientes inscritos. Tope de 10.000 inscritos por campaña. Abono de Ripley.com Puntos Go promocionales se realizará durante el mes siguiente al pago. La administración del Programa Ripley.com Puntos Go y entrega de sus beneficios es de exclusiva responsabilidad de Comercial ECCSA S.A. Términos y condiciones del Programa en www.Ripley.compuntosgo.com. Tarjetas de Crédito Ripley.com son emitidas por CAR S.A., sociedad de apoyo al giro y filial de Banco Ripley.com. Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl.
     </span>
 </td>
 ```
@@ -638,7 +638,7 @@ Consiste en desarrollar e inyectar un campo variable para que se determine difer
 
 ###### Estructuras diversas en su composición que van desde botoneras que conllevan a enrutamientos absolutos, como también, carousel circular y en forma de tarjetas.
 
-Normalmente, dichas piezas van en las cabeceras de las landing y de los diferentes mundos en el ecosistema de Ripley.com
+Normalmente, dichas piezas van en las cabeceras de las landing y de los diferentes mundos en el ecosistema de Ripley.com.com
 
 Existen varios elementos a considerar entre las IC dinámicas más antiguas, se describe como una botonera flexible y adaptable a mobile y muchas veces lleva banner que dependiendo del boton van cambiando dicho elemento.
 
@@ -659,7 +659,7 @@ const imageMobile = "../images/1-mb.jpg";
 const data = [
   {
     category: "vestuario deportivo",
-    url: "https://simple.ripley.cl/deporte/ropa-deportiva/ropa-deportiva",
+    url: "https://simple.Ripley.com.cl/deporte/ropa-deportiva/ropa-deportiva",
     banners: {
       desktop: "../images/ic-dinamica-vestuario-deportivo-desk_.jpg",
       mobile: "../images/ic-dinamica-vestuario-deportivo-mob.jpg",
@@ -686,7 +686,7 @@ $border-opacity: 0.1;
 
 #### Hacer _build_ ejecuta la construcción del array de objeto.
 
-> Entregando en producción diferentes html que posterior seran ensamblados por Webmaster en Ripley.com
+> Entregando en producción diferentes html que posterior seran ensamblados por Webmaster en Ripley.com.com
 
 Ejemplo de IC DINÁMICA:
 
@@ -740,7 +740,7 @@ estructura de código donde se carga los elementos a renderizarse en el navegado
 <div id="ic-container">
     <div class="iccarousel-nueva owl-carousel owl-theme">
       <a
-        href="https://simple.ripley.cl/deporte-y-aventura/camping-y-tiempo-libre/carpas-y-sacos?icd-camping-carpas-sacos"
+        href="https://simple.Ripley.com.cl/deporte-y-aventura/camping-y-tiempo-libre/carpas-y-sacos?icd-camping-carpas-sacos"
         class="item active"
       >
         <img src="assets/img/carpa.png" alt="carpas y sacos" />
@@ -813,7 +813,7 @@ $("#ic-container .iccarousel-nueva").owlCarousel({
 
 #### Configuración CSS.
 
-> Se determinó con webmaster esta depuración del 80% en el width para cuando se monte en el marco de ripley quede adecuado y no se encoja.
+> Se determinó con webmaster esta depuración del 80% en el width para cuando se monte en el marco de Ripley.com quede adecuado y no se encoja.
 
 ```
 #ic-container {
@@ -853,7 +853,7 @@ Ejemplo de IC tarjetas:
 ```
  <div class="iccarousel-nueva owl-carousel owl-theme">
       <a
-        href="https://simple.ripley.cl/moda-y-accesorios/marcas-hombre/tennis"
+        href="https://simple.Ripley.com.cl/moda-y-accesorios/marcas-hombre/tennis"
         class="item active"
       >
         <img src="assets/img/pantalonhombre1.jpg" alt="hombre" />
