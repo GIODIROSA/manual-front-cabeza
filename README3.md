@@ -336,13 +336,13 @@ Se determina la especificidad del mismo.
 
 ```
 
-## No recomendado
+## No permitido
 
 ##### Uso de procesador.
 
 > El énfasis del desarrollo, se establece en el crecimiento como profesional en el dominio ontológico y purista de los elementos que constituyen el origen de cada tecnología. Producto de las diferentes adversidades de la estructura del cliente. Se conlleva, a reformarnos y volver a las raíces iniciales del desarrollo. Manejar la triada, nos foratalece la comunión entre los desarrolladores y la unificación del producto a entregar. Ayudando con rapidez y eficacia; la especificidad de los elementos al momento del montaje en el marco del cliente y su plataforma.
 
-Se determina que **no es recomendable un procesador** producto de los elementos de actualización del mismo y de la mantención del código en el tiempo. Establenciendo así, los elementos del lenguaje conocidos como la triada nativa: html/ css/ js. El planteamiento yace, para la unificación de estructura de codificación y establecer los similes entre los programadores para que sea entendible por cada miembro y reducir los tiempos de lectura y comprensión del código.
+Se determina que **no es permitido un procesador** producto de los elementos de actualización del mismo y de la mantención del código en el tiempo. Establenciendo así, los elementos del lenguaje conocidos como la triada nativa: html/ css/ js. El planteamiento yace, para la unificación de estructura de codificación y establecer los similes entre los programadores para que sea entendible por cada miembro y reducir los tiempos de lectura y comprensión del código.
 
 1. Stylus
 2. Sass
