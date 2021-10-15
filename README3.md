@@ -269,7 +269,8 @@ type="image/webp"
 
 Revisar documentación de dicha librería para el máximo aprovechamiento de las facultades de la misma.
 
-<https://splidejs.com/>
+1. <https://splidejs.com/>
+2. <https://splidejs.com/guides/structure/>
 
 Instalación y linkeado de la librería.
 
@@ -293,6 +294,23 @@ Instalación y linkeado de la librería.
 
   <!-- MAIN JS -->
   <script src="./assets/js/main.js"></script>
+
+```
+
+#### Estructura HTML del carousel
+
+Dentro de cada lista se establece cualquier estructura disponible
+
+```
+<div class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">Slide 01</li>
+      <li class="splide__slide">Slide 02</li>
+      <li class="splide__slide">Slide 03</li>
+    </ul>
+  </div>
+</div>
 
 ```
 
@@ -707,6 +725,18 @@ Esta estructura contiene un cintillo que será comentado o descomentado dependie
 > Recordar que en el primer elemento se debe especificar en su clase para la activación del css la clase **active**.
 
 > Si en caso contrario se quiere desactivar eventualidades de hover a un elemento o items particular, se estipula en inline el atributo `pointer-events: none;` a la etiqueta señalada para que elimine el evento y quede desactivado.
+
+Uso de **pointer-eventes:none;**
+
+```
+<a style="pointer-events: none;" href="https://simple.ripley.cl/zapatos-y-bolsos/   revista-mama/calzado-2" class="item active">
+
+    <img src="assets/img/01-urco.jpg" alt="urco" />
+    <h2>urco</h2>
+
+</a>
+
+```
 
 Ejemplo de IC Cicular:
 
