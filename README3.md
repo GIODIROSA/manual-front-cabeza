@@ -1,4 +1,4 @@
-# Manual de uso para Front en Agencia Cabeza
+# Manual de uso **Interno** para Front en Agencia Cabeza
 
 ###### Documentación basada en las buenas prácticas de "Code Clean" (Robert C. Martin).
 
