@@ -236,9 +236,9 @@ ejemplo:
 
 wrap-contenido
 ###element
-wrap-contenido**titulo
-wrap-contenido**img
-wrap-contenido\*\*enlace
+wrap-contenido__titulo
+wrap-contenido__img
+wrap-contenido__enlace
 
 ###modificer
 
@@ -278,10 +278,10 @@ type="image/webp"
 simple
 
 <picture>
-    <!-- DESKTP -->
-        <source  type="image/webp" srcset="" alt=""/>
-    <!-- DESKTP -->
-        <source  srcset="./assets/img/desk/box4.jpg"/>
+<!-- DESKTP  WEBP-->
+        <source type="image/webp" srcset="" alt="" />
+<!-- DESKTP  JPG-->
+        <img loading="lazy" src="./assets/img/mob/box4-mb.jpg" />
 </picture>
 
 ```
