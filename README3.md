@@ -47,18 +47,9 @@ B) **Norma UPPER_CASE para nombrar id y constante en variable JS**
 ```
 const UNA_CONSTANTE (caso de JSE6)
 
-id="LANDING-EXAMPLE" (caso de html)
+id="landing-example" (caso de html)
 
-#LANDING-EXAMPLE (caso de style.css)
-
-```
-
-C) **Norma lowerCamelCase para nombrar clases**
-
-para nombrar clases `(class)`
-
-```
-class="wrapTextoMarketplace"
+#landing-example (caso de style.css)
 
 ```
 
@@ -137,10 +128,10 @@ Se establece `@media (min-width: 768px)` como syntax a usar. Estableciendo, min-
 
 <!-- MOBILE -->
 
-#landing-marketplace .wrapPreguntaUno,
-#landing-marketplace .wrapPreguntaTres,
-#landing-marketplace .wrapPreguntaDos,
-#landing-marketplace .wrapPreguntaCuatro {
+#landing-marketplace .wrap-preguntas__uno,
+#landing-marketplace .wrap-preguntas__dos,
+#landing-marketplace .wrap-preguntas__tres,
+#landing-marketplace .wrap-preguntas__cuatro {
   width: 100%;
   background-color: #b2b2b2;
   display: flex;
@@ -152,11 +143,11 @@ Se establece `@media (min-width: 768px)` como syntax a usar. Estableciendo, min-
 <!-- DESKTOP -->
 @media (min-width: 768px) {
 
-  #landing-marketplace #wrapCarouselMarcas {
+  #landing-marketplace #marcas-carrousel {
     display: block;
   }
 
-  #landing-marketplace #wrapCarouselMarcasMobile {
+  #landing-marketplace #marcas-carrousel__mobile {
     display: none;
   }
 
@@ -169,7 +160,7 @@ Se establece `@media (min-width: 768px)` como syntax a usar. Estableciendo, min-
 Bloque de código CSS que enmarca cada layout que se desarrolle.
 
 ```
-#LANDING-MARKETPLACE {
+#landing-marketplace {
     max-width: 1140px;
     margin: auto;
     font-family: "Montserrat", sans-serif;
@@ -189,10 +180,30 @@ CDN- HEAD- HTML:
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet"/>
 ```
 
-Uso en style.css
+Uso en style.css-> fonts
 
 ```
-    font-family: "Montserrat", sans-serif;
+@font-face {
+  font-family: "Gotham-Black";
+  src: url(https://minisitios.ripley.cl/minisitios/estatico/fonts/font-gotham/Gotham-Black.woff);
+}
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url(https://minisitios.ripley.cl/minisitios/estatico/fonts/font-gotham/Gotham-Bold.woff);
+}
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: url(https://minisitios.ripley.cl/minisitios/estatico/fonts/font-gotham/Gotham-Book.woff);
+}
+
+@font-face {
+  font-family: "Gotham-light";
+  src: url(https://minisitios.ripley.cl/minisitios/estatico/fonts/font-gotham/Gotham-Light.woff);
+}
+
+
 ```
 
 ### CDN autorizado para el uso de icono.
@@ -211,26 +222,32 @@ Etiquetas HTML o atributos que no se recomiendan:
 3. main
 4. header
 5. navbar
+6. aside
 
 > _Nota:_ cualquier etiqueta genérica o semántica produce un choque eminente con la estructura del cliente. Solo está permitido `<section></section>` , `<div></div>`; **section** como elemento mayor y jerarca, **div** como separador interno de bloques y padre de elemento directo.
 
 ### Manera de nombrar class.
 
-Se determinó que los id serán establecidos en **UPPER_CASE** mientras que las clases serán en **lowerCamelCase** pero con la facultad de ser declarativos y preciso para su interpretación, coincidiendo su funcionalidad o rol dentro del layout.
+Se determinó las clases serán en **metodología BEM** Block/ element/ Modificer.
 
 ejemplo:
 
-1. parrafoQueEsElMarketplace
-2. wrapTextoComorSerParteMarketplace
-3. parrafoComoSerParteMarketplace
+###block
 
-**RECOMENDACIÓN**: sE recomienda el uso de la metodología BEM. Como canon para establecer un sentido lógico y declarativo del nombramiento de clases.
+wrap-contenido
+###element
+wrap-contenido**titulo
+wrap-contenido**img
+wrap-contenido\*\*enlace
 
-ejemplo:
+###modificer
 
-1. author
-2. author_info / author--info
-3. authos_content /author--content
+wrap-contenido**btn (element)
+wrap-contenido**btn--dark
+wrap-contenido**btn--red
+wrap-contenido**btn--blue
+
+**RECOMENDACIÓN**: Se recomienda el uso de la metodología BEM. Como canon para establecer un sentido lógico y declarativo del nombramiento de clases.
 
 > Código Limpio, determina que el uso de clases declarativas sin importar el largo del mismo potencia su actuar a la hora del mantenimiento del código y de su lectura incluso 6 meses posterior a su realización; facilitando su rápida compresión y ubicación de la misma. El nombramiento de las clases, es vital para su rápida localización y actuar en su modificación.
 
@@ -257,9 +274,17 @@ type="image/webp"
         <img loading="lazy" src="./assets/img/mob/box4-mb.jpg" />
 </picture>
 
-```
 
-- Las imágenes deben **utilizar** lazy load según soporte de navegador. Revisar soporte.
+simple
+
+<picture>
+    <!-- DESKTP -->
+        <source  type="image/webp" srcset="" alt=""/>
+    <!-- DESKTP -->
+        <source  srcset="./assets/img/desk/box4.jpg"/>
+</picture>
+
+```
 
 > Nota: Establecer que la imagen tendrá un width: 100% en css tanto en desktop como en mobile, para lograr el ajuste adecuado de la caja. Tener en cuenta que la etiqueta _picture_ estipula un padding-bottom de 6 pixeles, dato a considerar a la hora de realizar grillas o flexibilizar un caja.
 
@@ -321,22 +346,29 @@ Dentro de cada lista se establece cualquier estructura disponible
 > En el html se establece el contenedor _DIV_ que va a contener el id para la activación del carousel.
 
 ```
-new Splide("#carouselMarcas", {
-  perPage: 5,
+new Splide("#carousel-marca", {
+  perPage: 4,
   breakpoints: {
-      768: {
+    768: {
       perPage: 2,
+      drag: true,
+      autoplay: true,
+      pagination: true,
+      padding: {
+        right: "2rem",
+      },
+    },
   },
-},
-
-  rewind: true,
-  type: "loop",
-  autoplay: true,
+  gap: 5,
+  rewind: false,
+  arrows: true,
+  autoplay: false,
   pagination: false,
-
 }).mount();
 
 ```
+
+> Se agregan propiedades al objeto de configuración dependiendo de los requisitos de la maqueta.
 
 ##### Arrow de carousel, para su manipulación por medio de CSS.
 
@@ -356,11 +388,11 @@ Se determina la especificidad del mismo.
 
 ## No permitido
 
-##### Uso de procesador.
+##### No se usan procesadores.
 
-> El énfasis del desarrollo, se establece en el crecimiento como profesional en el dominio ontológico y purista de los elementos que constituyen el origen de cada tecnología. Producto de las diferentes adversidades de la estructura del cliente. Se conlleva, a reformarnos y volver a las raíces iniciales del desarrollo. Manejar la triada, nos foratalece la comunión entre los desarrolladores y la unificación del producto a entregar. Ayudando con rapidez y eficacia; la especificidad de los elementos al momento del montaje en el marco del cliente y su plataforma.
+Se determina el uso native de las tecnologias aceptadas por el navegador de manera originaria.
 
-Se determina que **no es permitido un procesador** producto de los elementos de actualización del mismo y de la mantención del código en el tiempo. Establenciendo así, los elementos del lenguaje conocidos como la triada nativa: html/ css/ js. El planteamiento yace, para la unificación de estructura de codificación y establecer los similes entre los programadores para que sea entendible por cada miembro y reducir los tiempos de lectura y comprensión del código.
+##### tal son:
 
 1. Stylus
 2. Sass
