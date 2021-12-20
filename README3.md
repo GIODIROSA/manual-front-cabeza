@@ -70,6 +70,22 @@ _HEAD_
 </mini-site-styles>
 ```
 
+#### Uso de metadatos (tag: meta): entregados por el Product Manager proveniente de una empresa externa que realiza el SEO. 
+
+
+```
+<meta
+        name="keyword"
+        content="Artículos de camping 590 Carpas 14800 Artículos de trekking 30 Sacos de dormir 2400 Zapatillas outdoor 5400 Vestuario deportivo 110 Ropa deportiva 4400 Camping Coleman 40 Camping marmot 10 Camping doite 50 Accesorios camping 390 Artículos camping 140 Mochilas camping 1600
+        Bananos outdooor 140 Mesas de camping 880 Sillas de camping 720 Sillas plegables 5400 Doite 60500 Coleman 4400 Lippi 110000 Marmot 22200 Lamparas camping 210 Termos 5400 Botellas de agua 3600 Coolers 22200 Lamparas camping 210 Termos 5400 Botellas de agua 3600 Cocinillas camping 2900 Colchon inflable 14800"
+      />
+<meta
+        name="description"
+        content="Descubre en ripley.com todo en Artículos de camping, outdoor, trekking y más, con increíbles precios y oportunidades exclusivas."
+      />
+
+```
+
 _BODY_
 
 ```
