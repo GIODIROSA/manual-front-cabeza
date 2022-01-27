@@ -1,4 +1,4 @@
-# Manual de uso interno para Front en Agencia Cabeza
+f# Manual de uso interno para Front en Agencia Cabeza
 
 ###### Documentación basada en las buenas prácticas de "Code Clean" (Robert C. Martin).
 
@@ -70,8 +70,7 @@ _HEAD_
 </mini-site-styles>
 ```
 
-#### Uso de metadatos (tag: meta): entregados por el Product Manager proveniente de una empresa externa que realiza el SEO. 
-
+#### Uso de metadatos (tag: meta): entregados por el Product Manager proveniente de una empresa externa que realiza el SEO.
 
 ```
 <meta
@@ -252,9 +251,9 @@ ejemplo:
 
 wrap-contenido
 ###element
-wrap-contenido__titulo
-wrap-contenido__img
-wrap-contenido__enlace
+wrap-contenido**titulo
+wrap-contenido**img
+wrap-contenido\_\_enlace
 
 ###modificer
 
@@ -287,7 +286,7 @@ type="image/webp"
     <!-- DESKTP -->
         <source type="image/webp" srcset="" alt="" />
     <!-- MOBILE -->
-        <img loading="lazy" src="./assets/img/mob/box4-mb.jpg" />
+        <img  src="./assets/img/mob/box4-mb.jpg" />
 </picture>
 
 
@@ -297,7 +296,7 @@ simple
 <!-- DESKTP  WEBP-->
         <source type="image/webp" srcset="" alt="" />
 <!-- DESKTP  JPG-->
-        <img loading="lazy" src="./assets/img/mob/box4-mb.jpg" />
+        <img  src="./assets/img/mob/box4-mb.jpg" />
 </picture>
 
 ```
@@ -803,7 +802,8 @@ Ejemplo de IC Cicular:
         media="(min-width:1000px)"
         srcset="assets/img/Cintillo-desk.jpg"
       />
-      <img loading="lazy" src="assets/img/Cintillo-mob.jpg" alt="cintillo infantil" />
+      <img
+      src="assets/img/Cintillo-mob.jpg" alt="cintillo infantil" />
     </picture>
   </a>
 <!--FIN -->
